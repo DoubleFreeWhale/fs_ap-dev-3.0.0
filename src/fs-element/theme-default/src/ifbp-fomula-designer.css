@@ -1,0 +1,153 @@
+
+.fomula-dialog::selection {
+    background: none;
+}
+.fomula-dialog .el-dialog {
+    max-height: 688px;
+}
+.fomula-dialog .el-dialog__body {
+    box-sizing: border-box;
+}
+.fomula-dialog .el-textarea__inner {
+    padding: 4px;
+    line-height: 20px;
+}
+/* textarea and calculator */
+.fomula-dialog .layout-top {
+    display: flex;
+}
+.fomula-textarea-and-btns {
+    flex: 1;
+    margin-right: 16px;
+}
+.fomula-textarea-btns {
+    text-align: right;
+}
+.fomula-textarea-btns {
+    margin-top: 8px;
+}
+.fomula-textarea-btns .el-button + .el-button {
+    margin-left: 16px;
+}
+/* calculator */
+.fomula-calculator-operators {
+    margin-top: 14px;
+}
+.fomula-calculator-operators span,
+.fomula-calculator-numbers span {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 58px;
+    height: 34px;
+    border: 1px solid #D2D2D7;
+    line-height: 34px;
+    text-align: center;
+    font-size: 14px;
+    color: #333333;
+    cursor: pointer;
+}
+.fomula-calculator-numbers span {
+    background: #F5F5F5;
+}
+.fomula-calculator-numbers span:hover {
+    background: #e7e6ec;
+}
+.fomula-calculator-numbers span:active {
+    background: #d8d8d8;
+}
+.fomula-calculator-operators span {
+    background: #DBDBDB;
+}
+.fomula-calculator-operators span:hover {
+    background: #c9c8ce;
+}
+.fomula-calculator-operators span:active {
+    background: #b4b4be;
+}
+.fomula-calculator-numbers .row + .row,
+.fomula-calculator-operators .row + .row {
+    margin-top: 8px;
+}
+.fomula-calculator-numbers span + span,
+.fomula-calculator-operators span + span {
+    margin-left: 8px;
+}
+.fomula-calculator-operators {
+    margin-top: 16px;
+}
+
+/* bottom part */
+.fomula-tpls-and-dbrelated {
+    margin-top: 16px;
+}
+.fomula-tpls,
+.fomula-dbrelated,
+.fomula-no-result {
+    box-sizing: border-box;
+    height: 222px;
+    position: relative;
+    box-shadow: none;
+}
+
+.fomula-no-result__inner,
+.fomula-no-result {
+    padding: 10px;
+}
+.fomula-no-result,
+.fomula-tips {
+    border: 1px solid #F0F0F5;
+    border-radius: 4px;
+    font-size: 14px;
+    color: #2D2D2D;
+}
+/* tpls */
+.fomula-tpls .el-tabs__header,
+.fomula-dbrelated .el-tabs__header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+}
+.fomula-tpls .el-tabs__content,
+.fomula-dbrelated .el-tabs__content {
+    box-sizing: border-box;
+    height: 100%;
+    padding: 42px 0 0 !important;
+    overflow: auto;
+}
+.fomula-tpls ul,
+.fomula-dbrelated ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.fomula-tpls li,
+.fomula-dbrelated li {
+    padding: 10px;
+}
+.fomula-tpl-current,
+.fomula-table-current,
+.fomula-tpls li:hover,
+.fomula-dbrelated li:hover {
+    background: #EAF9FF;
+    cursor: pointer;
+}
+.fomula-tips {
+    box-sizing: border-box;
+    margin-top: 16px;
+    padding: 12px;
+    height: 84px;
+    line-height: 20px;
+    overflow: auto;
+}
+.fomula-tables {
+    border-right: 1px solid #d1dbe5;
+}
+.fomula-tables, .fomula-fields {
+    height: 206px;
+    overflow-y: auto;
+}
+.fomula-tpls-and-dbrelated .el-tabs>div {
+    margin-left: 0px;
+}

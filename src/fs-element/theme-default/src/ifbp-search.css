@@ -1,0 +1,244 @@
+@charset "UTF-8";
+@import "common/var.css";
+
+/* 搜索框 */
+
+.search-input-container,
+.advanced-search-panel {
+  font-size: 14px;
+  color: #666666;
+}
+
+.search-input-container{
+  display: flex;
+}
+
+.search-input-container .el-input {
+  min-width: 288px;
+  flex: 1;
+}
+.search-input-container .el-input__inner{
+  border-radius:2px 0 0 2px;
+
+}
+.set-all-border-radius .el-input__inner{
+  border-radius:4px !important;
+}
+.search-input-container:hover .el-input__inner,
+.search-input-container:hover > .btn-more
+{
+  border-color:#8392a5;
+
+}
+
+
+
+.search-input-container .btn-more {
+  padding-left: 9px;
+  padding-right: 8px;
+  cursor: pointer;
+  border: 1px solid #D2D2D7;
+  color: #666666;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  margin-left: -1px;
+  border-radius: 0 2px 2px 0;
+}
+
+
+/* 高级搜索 */
+.advanced-search-panel {
+  position: relative;
+  padding: 8px 16px 56px;
+  background-color: #ffffff;
+  border-top: 1px solid #F0F0F5;
+}
+.advanced-search-panel .condition-row {
+  line-height: 40px;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+}
+.advanced-search-panel .condition-label {
+  display: inline-block;
+  min-width: 4.3em;
+  text-align: right;
+  margin-right: 16px;
+  color: #888888;
+  white-space: nowrap;
+}
+.advanced-search-panel .condition-options,
+.advanced-search-panel .advanced-conditions {
+  text-align: left;
+}
+.advanced-search-panel .current-condition-options-container {
+  box-sizing: border-box;
+  /* padding: 0 220px 0 16px; */
+  padding-left: 16px;
+  z-index: 2;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  /* width: 100%; */
+  width: calc(100% - 220px);
+  transform: translateY(-66px);
+}
+.advanced-search-panel .current-condition-options {
+  padding: 10px 20px;
+  border: 1px solid var(--color-primary);
+  background: #ffffff;
+}
+.advanced-search-panel .current-condition-options .condition-option {
+  display: inline-block;
+  height: 30px;
+  padding: 0 6px;
+  line-height: 30px;
+}
+.advanced-search-panel .condition-options,
+.advanced-search-panel .advanced-conditions {
+  flex: 1;
+  position: relative;
+}
+.advanced-search-panel .condition-option,
+.advanced-search-panel .advanced-condition {
+  margin-right: 16px;
+  padding: 0 8px;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: inline-block;
+  height: 24px;
+  line-height: 24px;
+  color: #2d2d2d;
+}
+.advanced-search-panel .advanced-conditions-container .el-col {
+  margin-bottom: 0;
+}
+.advanced-search-panel .condition-option:hover,
+.advanced-search-panel .condition-option.selected {
+  cursor: pointer;
+  color: #ffffff;
+  background: var(--color-primary);
+}
+.advanced-search-panel .param-price-input {
+  width: 5em;
+}
+.advanced-search-panel .option-num-container {
+  display: inline-block;
+  width: 5em;
+}
+.advanced-search-panel .option-date-container,
+.advanced-search-panel .option-ref-container {
+  display: inline-block;
+  width: 200px;
+  margin: 0 2px;
+}
+.advanced-search-panel .option-date-container .el-select{
+  margin-left:8px;
+}
+.advanced-search-panel .options-selected {
+  text-align: left;
+}
+.advanced-search-panel .options-selected .el-tag {
+  margin-bottom: 5px;
+  margin-right: 5px;
+}
+.advanced-search-panel .advanced-condition {
+  word-break: keep-all;
+  white-space: nowrap;
+}
+.advanced-search-panel .advanced-condition.current {
+  border: 1px solid var(--color-primary);
+  border-bottom-color: #ffffff;
+  background: #ffffff;
+  position: relative;
+  z-index: 3;
+  margin-left: -2px;
+}
+.search-input-container .btn-more.active,
+.search-input-container .btn-more.active i,
+.advanced-search-panel .condition-options .btn-more.active,
+.advanced-search-panel .condition-options .btn-more.active i,
+.advanced-search-panel .advanced-condition.selected,
+.advanced-search-panel .advanced-condition.selected i {
+  background: #ffffff;
+  color: var(--color-primary);
+}
+
+.no-breadcrumb-search.search-input-container .btn-more.active,
+.no-breadcrumb-search.search-input-container .btn-more.active i,
+.no-breadcrumb-search.advanced-search-panel .condition-options .btn-more.active,
+.no-breadcrumb-search.advanced-search-panel .condition-options .btn-more.active i,
+.no-breadcrumb-search.advanced-search-panel .advanced-condition.selected,
+.no-breadcrumb-search.advanced-search-panel .advanced-condition.selected i {
+  background: rgba(0,0,0,0);
+}
+
+
+.search-input-container .btn-more i,
+.advanced-search-panel .condition-options .btn-more i,
+.advanced-search-panel .advanced-condition i {
+  color: #C8C8CD;
+  /* transform: scale(0.7); */
+  font-size: 16px;
+  position: relative;
+  top: 1px;
+}
+.advanced-search-panel .condition-options .btn-more {
+  /* float: right; */
+  cursor: pointer;
+  padding: 0 8px;
+  white-space: nowrap;
+}
+.advanced-search-panel .condition-options .btn-more.inactive {
+  position: absolute;
+  right: 0;
+  top: 0;
+  /* 渐变背景 */
+  filter:alpha(opacity=50 finishopacity=100 style=1 startx=0,starty=0,finishx=18,finishy=0) progid:DXImageTransform.Microsoft.gradient(startcolorstr=#fff,endcolorstr=#fff,gradientType=0);
+  -ms-filter:alpha(opacity=50 finishopacity=100 style=1 startx=0,starty=0,finishx=18,finishy=0) progid:DXImageTransform.Microsoft.gradient(startcolorstr=#fff,endcolorstr=#fff,gradientType=0);/*IE8*/
+  background: #ffffff; /* 一些不支持背景渐变的浏览器 */
+  /* background: -moz-linear-gradient(left, rgba(255, 255, 255, .5), rgba(255, 255, 255, 1)); */
+  background: -webkit-gradient(linear, left top, 20% top, from(rgba(255, 255, 255, .5)), to(rgba(255, 255, 255, 1)));
+  /* background: -o-linear-gradient(left, rgba(255, 255, 255, .5), rgba(255, 255, 255, 1)); */
+}
+
+.no-breadcrumb-search.advanced-search-panel .condition-options .btn-more.inactive {
+  /* background: rgba(0,0,0,0); */
+     background: rgba(240,240,245,1); 
+     background: -webkit-gradient(linear, left top, 20% top, from(rgba(240, 240, 245, 0.5)), to(rgba(240, 240, 245, 1)));
+}
+.advanced-search-panel .advanced-search-btns {
+  position: absolute;
+  right: 16px;
+  bottom: 16px;
+  text-align: right;
+}
+.advanced-search-panel .condition-multiple {
+  width: 60px;
+  text-align: right;
+  height: 40px;
+}
+.advanced-search-panel .advanced-multiple-checkbox {
+  float: right;
+  line-height: 30px;
+}
+
+
+.advanced-search-panel.without-btns {
+  padding-bottom: 8px;
+}
+.advanced-search-panel.without-btns .current-condition-options-container {
+  transform: translateY(-18px);
+  width: 100%;
+}
+.no-breadcrumb-search.advanced-search-panel {
+  background-color: rgba(0,0,0,0);
+  border-top: 1px solid rgba(0,0,0,0);
+}
+.search-input-container .el-select .el-input__inner {
+  cursor: default;
+}
+.search-input-container .el-select .el-input .el-input__icon {
+  transform: translateY(-50%);
+}

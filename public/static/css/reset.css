@@ -1,0 +1,383 @@
+.font_default{ font-size: 14px; color: #393C3E; font-weight: 400; font-style: normal; line-height: normal;}
+.dashed{ height: 1px; width: inherit; }
+.dashed img{ height: 2px; width: inherit; position: absolute; }
+
+.pointerStyle{
+    cursor: pointer;
+}
+/* selection reset u.css */
+::selection {
+    background: #53b2f8 !important;
+    color: white;
+}
+
+/* backgound-color */
+.bg-green-light{ background-color: #72C11C; }
+.bg-green-dark{  }
+
+/****************** fix Element UI css ********************/
+
+.el-button--large{ height: 44px; }
+/* success button bg-color */
+.el-button--success{ background-color: #72C11C; border-color: #72C11C; }
+.el-button--success:focus, .el-button--success:hover{ background-color:#5CA012; border-color: #72C11C; }
+/* input append prepend bg-color */
+.el-input-group__append, .el-input-group__prepend{ background-color: #F5F8FA; }
+
+
+.clearfix{
+    display: block;
+    content: "";
+    clear: both;
+}
+
+.clearfix:before,
+.clearfix:after {
+    display: table;
+    content: "";
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+@media screen and (max-width: 300px) {
+    .logo .title {
+        display: none;
+    }
+}
+
+/* 大屏幕 */
+@media (min-width: 1200px) {
+
+}
+
+/* 平板电脑和小屏电脑之间的分辨率 */
+@media (min-width: 768px) and (max-width: 979px) {
+}
+
+/* 横向放置的手机和竖向放置的平板之间的分辨率 */
+@media (max-width: 768px) {
+    .logo .title {
+        display: none !important;
+    }
+    .headerMenu .menuHeaderExpandbox {
+        width: 98% !important;
+        min-width: 320px !important;
+    }
+    .header .logo img {
+        margin-left: 0px !important;
+    }
+    .header .logo a,
+    .header .logo span.headerTitle {
+
+        display: none !important;
+    }
+    header .logo a+i.shotcut {
+        margin-left: 12px !important;
+    }
+
+}
+
+
+@media (max-width: 768px) {
+    /* 隐藏logo */
+
+}
+
+/* 横向放置的手机及分辨率更小的设备 */
+@media (max-width: 480px) {
+    /* .header .logo {
+      padding-left:
+    } */
+    /* .header .person-set {
+      width: 100% !important;
+    } */
+    .menuHeaderExpandbox .expand-box-container {
+        width: 100% !important;
+        min-width: 320px !important;
+    }
+    .headerMenu .menuHeaderExpandbox .left {
+        position: absolute !important;
+        left: -323px;
+    }
+    .headerMenu .menuHeaderExpandbox .right {
+        width: 100% !important;
+    }
+
+    ul.user-component li {
+        display: none ;
+    }
+    ul.user-component li.user {
+        display: block ;
+    }
+}
+
+/*@media (max-width: 450px) {
+  .card-box {
+    padding: 0 calc((100% - 320px)/2);
+  }
+  .card-box .card.tile {
+    width: 145px !important;
+    height: 110px !important;
+    margin: 7px !important;
+  }
+  .card-box .card.tile .card-title {
+    margin-top: 5px;
+    font-size: 14px;
+  }
+  .card-box .card.tile .appIcon.iconfont {
+    font-size: 40px;
+  }
+}*/
+@media (min-width: 768px) {
+    .mdlayout-master {
+        left: 0 !important;
+    }
+    .tree-mdlayout-master {
+        left: 0 !important;
+    }
+}
+/* 磁贴图标颜色*/
+.bg-red {
+    background-color: rgb(244,67,54) !important;
+}
+.bg-pink {
+    background-color: rgb(233,30,99) !important;
+}
+.bg-purple {
+    background-color: rgb(156,39,176) !important;
+}
+.bg-deep-purple {
+    background-color: rgb(103,58,183) !important;
+}
+.bg-indigo {
+    background-color: rgb(63,81,181) !important;
+}
+.bg-blue {
+    background-color: rgb(33,150,243) !important;
+}
+.bg-light-blue {
+    background-color: rgb(3,169,244) !important;
+}
+.bg-cyan {
+    background-color: rgb(0,188,212) !important;
+}
+.bg-teal {
+    background-color: rgb(0,150,136) !important;
+}
+.bg-green {
+    background-color: rgb(76,175,80) !important;
+}
+.bg-light-green {
+    background-color: rgb(139,195,74) !important;
+}
+.bg-lime {
+    background-color: rgb(205,220,57) !important;
+}
+.bg-yellow {
+    background-color: rgb(255,235,59) !important;
+}
+.bg-amber {
+    background-color: rgb(255,193,7) !important;
+}
+.bg-orange {
+    background-color: rgb(255,152,0) !important;
+}
+.bg-deep-orange {
+    background-color: rgb(255,87,34) !important;
+}
+.bg-brown {
+    background-color: rgb(121,85,72) !important;
+}
+.bg-grey {
+    background-color: rgb(158,158,158) !important;
+}
+.bg-blue-grey {
+    background-color: rgb(96,125,139) !important;
+}
+.bg-black {
+    background-color: rgb(0,0,0) !important;
+}
+.red {
+    color: rgb(244,67,54) !important;
+}
+.pink {
+    color: rgb(233,30,99) !important;
+}
+.purple {
+    color: rgb(156,39,176) !important;
+}
+.deep-purple {
+    color: rgb(103,58,183) !important;
+}
+.indigo {
+    color: rgb(63,81,181) !important;
+}
+.blue {
+    color: rgb(33,150,243) !important;
+}
+.light-blue {
+    color: rgb(3,169,244) !important;
+}
+.cyan {
+    color: rgb(0,188,212) !important;
+}
+.teal {
+    color: rgb(0,150,136) !important;
+}
+.green {
+    color: rgb(76,175,80) !important;
+}
+.light-green {
+    color: rgb(139,195,74) !important;
+}
+.lime {
+    color: rgb(205,220,57) !important;
+}
+.yellow {
+    color: rgb(255,235,59) !important;
+}
+.amber {
+    color: rgb(255,193,7) !important;
+}
+.orange {
+    color: rgb(255,152,0) !important;
+}
+.deep-orange {
+    color: rgb(255,87,34) !important;
+}
+.brown {
+    color: rgb(121,85,72) !important;
+}
+.grey {
+    color: rgb(158,158,158) !important;
+}
+.blue-grey {
+    color: rgb(96,125,139) !important;
+}
+.black {
+    color: rgb(0,0,0) !important;
+}
+
+
+/**
+   * reset样式
+   * by:lizhik
+   */
+/*
+ * 避免影响表格样式
+ * table, caption, tbody, tfoot, thead, tr, th, td,
+ */
+a,
+abbr,
+acronym,
+address,
+applet,
+article,
+aside,
+audio,
+b,
+big,
+blockquote,
+body,
+canvas,
+center,
+cite,
+code,
+dd,
+del,
+details,
+dfn,
+div,
+dl,
+dt,
+em,
+embed,
+fieldset,
+figcaption,
+figure,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+hgroup,
+html,
+i,
+iframe,
+img,
+ins,
+kbd,
+label,
+legend,
+li,
+mark,
+menu,
+nav,
+object,
+ol,
+output,
+p,
+pre,
+q,
+ruby,
+s,
+samp,
+section,
+small,
+span,
+strike,
+strong,
+sub,
+summary,
+sup,
+time,
+tt,
+u,
+ul,
+var,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+html,body{
+    height: 100%;
+}
+ul,ol {
+    list-style-type: none;
+}
+/*改变滚动条样式*/
+
+
+/*!*滚动条 start*!*/
+div::-webkit-scrollbar {
+    background-color:rgba(0,0,0,0)
+}
+
+div::-webkit-scrollbar-track {
+
+    background: rgba(230, 234, 238, 0.9);
+
+}
+
+/*!*定义滑块 内阴影+圆角*!*/
+div::-webkit-scrollbar-thumb {
+    width: 10px;
+    min-height: 8px;min-width: 8px;
+    border-radius: 8px;
+    background-color: rgba(0, 0, 0, 0.298039215686275);
+}
+
+div::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(0, 0, 0, 0.298039215686275);
+}
+body,input,textarea,button{
+    font-family: "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
+}

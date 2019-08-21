@@ -1,0 +1,40 @@
+.mint-datetime {
+    width: 100%;
+}
+.mint-datetime .picker-slot-wrapper, .mint-datetime .picker-item {
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+}
+.mint-datetime .picker-toolbar {
+    border-bottom: solid 1px #eaeaea;
+}
+.mint-datetime-action {
+    display: inline-block;
+    width: 50%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 14px;
+    color: #2d2d2d;
+}
+.mint-datetime-tips{
+    float: left;
+    width:40%;
+    padding:0; 
+}
+.mint-datetime-cancel {
+    float: left;
+    text-align:left;
+    width:48%;
+    padding-left:2%;
+}
+.mint-datetime-confirm {
+    float: right;
+    text-align:right;
+    width:48%;
+    padding-right:2%;
+    color:#E60012;
+}
+.mint-datetime-mincancel,
+.mint-datetime-minconfirm{
+    width:28%;
+}

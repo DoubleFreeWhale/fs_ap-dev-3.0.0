@@ -1,0 +1,7 @@
+[{
+  "route": "/userInfo/Test",
+  "extJs": "/ap/pageExt/test.js",
+  "extMethods": [
+    "addUserBtn"
+  ]
+}]

@@ -1,0 +1,42 @@
+[{
+    "category":"平台标准模板",
+    "code":"bill",
+    "templates":[{
+        "name":"默认列表页",
+        "pic":"./list/list.png",
+        "url":"./res/templates/list/list.vue"
+    },{
+        "name":"默认卡片页",
+        "pic":"./card/card.png",
+        "url":"./res/templates/card/card.vue"
+    },{
+        "name":"分屏布局页",
+        "pic":"./card/card.png",
+        "url":"./res/templates/card/card.vue"
+    }]
+},{
+    "category":"租赁行业模板",
+    "code":"bill2",
+    "templates":[{
+        "name":"报价器",
+        "pic":"./list/list.png",
+        "url":"./res/templates/list/list.vue"
+    },{
+        "name":"询价",
+        "pic":"./list/list.png",
+        "url":"./res/templates/list/list.vue"
+    }]
+},{
+    "category":"保险行业模板",
+    "code":"bill3",
+    "templates":[{
+        "name":"默认模板页",
+        "pic":"./list/list.png",
+        "url":"./res/templates/list/list.vue"
+    },{
+        "name":"行业模板页",
+        "pic":"./list/list.png",
+        "url":"./res/templates/list/list.vue"
+    }]
+
+}]

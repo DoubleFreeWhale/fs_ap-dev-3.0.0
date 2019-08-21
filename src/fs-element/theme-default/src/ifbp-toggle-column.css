@@ -1,0 +1,41 @@
+
+.toggle-column-dialog .el-dialog {
+    max-height: none;
+}
+.toggle-column-dialog .el-dialog__body {
+    padding: 0;
+    height: 395px;
+    overflow: auto;
+}
+.toggle-column-dialog .toggle-item {
+    box-sizing: border-box;
+    height: 44px;
+    padding: 13px 16px;
+    border-bottom: 1px solid #F0F0F5;
+}
+
+.toggle-column-dialog .sortable-ghost{
+    opacity: 0.5;
+    background-color: #C1E5FD !important;
+    color: #C1E5FD;
+}
+
+.toggle-column-dialog .sortable-ghost .drag-icon{
+    color: #C1E5FD;
+}
+.toggle-column-dialog .toggle-item.selected {
+    background: #C1E5FD;
+}
+.toggle-column-dialog .toggle-checkbox {
+    margin-right: 16px;
+}
+.toggle-column-dialog .sortable-ghost .toggle-checkbox{
+    display: none;
+}
+
+.toggle-column-dialog .drag-icon {
+    float: right;
+    font-size: 18px;
+    color: #75787B;
+    cursor: pointer;
+}

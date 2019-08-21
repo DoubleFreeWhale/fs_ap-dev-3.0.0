@@ -1,0 +1,42 @@
+@charset "UTF-8";
+@import "common/var.css";
+
+.search-dialog-container{
+    display: inline-block;
+}
+.search-input-wrap{
+    display: inline-block;
+    line-height: inherit;
+    width:100%;
+}
+.search-input-wrap .el-input{
+    width:calc(100% - 50px);
+    vertical-align: middle;
+}
+.search-input-wrap .btn-more{
+    display: inline-block;
+    vertical-align: middle;
+    margin-left:12px;
+    cursor: pointer;
+}
+.search-input-wrap .btn-more i{
+    margin-left:12px;
+}
+.search-dialog-item-half{
+    width:47%;
+    display: inline-block;
+}
+.search-dialog-separate{
+    display: inline-block;
+    text-align: center;
+    width:6%;
+}
+.search-dialog .el-dialog__body .el-form-item{
+    margin-bottom:16px;
+}
+.search-dialog .el-form:nth-last-child(1) .el-form-item{
+    margin-bottom:0;
+}
+.search-dialog .el-dialog__body .el-form-item__content{
+    width:auto;
+}

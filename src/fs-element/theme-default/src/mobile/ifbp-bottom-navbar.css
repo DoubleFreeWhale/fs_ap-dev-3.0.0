@@ -1,0 +1,45 @@
+.navbar_wrapper_bot{
+    position:fixed;
+    left:0;
+    bottom:0;
+    height: 49px;
+    width:100%;
+    z-index: 99;
+    border-top:1px solid #C3C3C7;
+}
+.navbar_ul{
+    display: -webkit-flex;
+    display: flex;
+    height: 100%;
+    width:100%;
+    background: #F5F5F5;
+    box-shadow: 0 0 0 0 rgba(0,0,0,0.30);
+}
+.navbar_ul>li{
+    width: 100%;
+    text-align: center;
+    -webkit-box-flex:1.0; /* Safari 和 Chrome */
+    box-flex:1;
+    box-orient:vertical;
+    -webkit-box-orient:vertical;
+    box-pack: center;
+    -webkit-box-align:center;
+    box-align: center;
+}
+.navbar_icon > i{
+    display:inline-block;
+    font-size:20px;
+    width:22px;
+    height:22px;
+    font-weight:normal;
+}
+.navbar_title_bot{
+    font-family: SFProText-Medium;
+    font-size: 10px;
+    color: #8E8E93;
+    line-height:14px;
+}
+.navbar_activeLi > p,
+.navbar_activeLi i{
+    color:#FF595F;
+}

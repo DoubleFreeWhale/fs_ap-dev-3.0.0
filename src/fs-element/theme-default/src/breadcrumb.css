@@ -1,0 +1,52 @@
+@charset "UTF-8";
+@import "common/var.css";
+
+@component-namespace el {
+
+  @b breadcrumb {
+    font-size:14px;
+    line-height: 20px;
+    @utils-clearfix;
+
+    @e separator {
+      margin: 0 6px;
+      color: var(--breadcrumb-color);
+    }
+    @e item {
+      float: left;
+
+      @e inner {
+        &, & a {
+          transition: color .15s linear;
+          color:var(--color-primary);
+          display: inline-block;
+          line-height: 20px;
+
+          &:hover {
+            color: var(--color-primary);
+            cursor: pointer;
+            text-decoration: underline;
+          }
+        }
+      }
+
+      &:last-child {
+        .el-breadcrumb__item__inner,
+        .el-breadcrumb__item__inner a {
+          &, &:hover {
+            height: 20px;
+            color: var(--breadcrumb-color);
+            cursor: text;
+            display: inline-block;
+            line-height: 20px;
+            text-decoration: none;
+          }
+        }
+
+        .el-breadcrumb__separator {
+          display: none;
+        }
+      }
+    }
+  }
+}

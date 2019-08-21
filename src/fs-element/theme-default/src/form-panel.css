@@ -1,0 +1,28 @@
+@import "common/var.css";
+
+.el-form-panel {
+  display: block;
+  border-bottom: 1px solid var(--color-bg);
+  padding-top: 10px;
+}
+.el-form-panel1 {
+  display: block;
+  /*border-bottom: 1px solid var(--color-bg);*/
+  padding-top: 10px;
+}
+.el-form-panel.el-form-panel-first{
+  padding-top: 0px;
+}
+
+.el-form-panel.el-form-panel-last{
+  border-bottom: 0px;
+}
+.el-form-panel-title {
+  text-shadow: none;
+  font-size: 13px;
+  border-bottom: 1px solid var(--color-bg);
+  padding-bottom:8px;
+  margin-bottom:20px;
+  color: #333;
+  font-weight: 700;
+}

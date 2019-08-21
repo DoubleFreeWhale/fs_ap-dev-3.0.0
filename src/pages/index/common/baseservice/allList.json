@@ -1,0 +1,283 @@
+{
+  "status" : 1,
+  "msg" : "success",
+  "data" : [ {
+    "value" : "应用平台",
+    "label" : "应用平台",
+    "children" : [ {
+      "value" : "组织与权限",
+      "label" : "组织与权限",
+      "path" : null,
+      "id" : "GROUP0INS0014",
+      "children" : [ {
+        "id" : "APP00000008",
+        "value" : "组织管理",
+        "label" : "组织管理",
+        "path" : "/HR010003",
+        "component" : "组件",
+        "code" : "orgMgt",
+        "system" : null,
+        "app_index" : "01",
+        "appIcon" : "iconfont icon-liuchengdingyi ",
+        "subTitle":"组织管理组织管理组织管理组织管理组织管理组织管理组织管理组织管理组织管理组织管理",
+        "footerContent":"组织管理组织管理组织管理组织管理组织管理组织管理"
+      }, {
+        "id" : "APP00000005",
+        "value" : "员工管理",
+        "label" : "员工管理",
+        "path" : "/staff",
+        "component" : "组件",
+        "code" : "usermgr",
+        "system" : null,
+        "app_index" : "01",
+        "appIcon" : "iconfont icon-adminmanagement ",
+        "subTitle":null,
+        "footerContent":null
+      }, {
+        "id" : "APP00000020",
+        "value" : "用户管理",
+        "label" : "用户管理",
+        "path" : "/userInfo",
+        "component" : "组件",
+        "code" : "userInfo",
+        "system" : null,
+        "app_index" : "01",
+        "appIcon" : "iconfont icon-appicon ",
+        "subTitle":null,
+        "footerContent":null
+      }, {
+        "id" : "APP00000003",
+        "value" : "角色管理",
+        "label" : "角色管理",
+        "path" : "/lgc/pages$app$rolelist$index",
+        "component" : "组件",
+        "code" : "rolemgr",
+        "system" : null,
+        "app_index" : "02",
+        "appIcon" : "iconfont icon-rolemanagement ",
+        "subTitle":null,
+        "footerContent":null
+      }, {
+        "id" : "APP00000007",
+        "value" : "分配用户到角色",
+        "label" : "分配用户到角色",
+        "path" : "/lgc/pages$workbench$roleConUsers$index",
+        "component" : "组件",
+        "code" : "roleConUser",
+        "system" : null,
+        "app_index" : "03",
+        "appIcon" : "iconfont icon-jiaosefenpeiyonghu ",
+        "subTitle":null,
+        "footerContent":null
+      }, {
+        "id" : "APP00000002",
+        "value" : "小应用授权",
+        "label" : "小应用授权",
+        "path" : "/lgc/$wbalone$data:layout$rolemgr",
+        "component" : "组件",
+        "code" : "apppermission",
+        "system" : null,
+        "app_index" : "04",
+        "appIcon" : "iconfont icon-smallauthorization ",
+        "subTitle":null,
+        "footerContent":null
+      }, {
+        "id" : "APP00000006",
+        "value" : "小部件授权",
+        "label" : "小部件授权",
+        "path" : "/lgc/$wbalone$data:layout$rolemgrwidget",
+        "component" : "组件",
+        "code" : "widgetpermission",
+        "system" : null,
+        "app_index" : "05",
+        "appIcon" : "iconfont icon-xiaobujianshouquan ",
+        "subTitle":null,
+        "footerContent":null
+      }, {
+        "id" : "APP00000015",
+        "value" : "数据权限",
+        "label" : "数据权限",
+        "path" : "/dataAuthority",
+        "component" : "组件",
+        "code" : "dataAuth",
+        "system" : null,
+        "app_index" : "12",
+        "appIcon" : "iconfont icon-shujuquanxian ",
+        "subTitle":null,
+        "footerContent":null
+      } ]
+    }, {
+      "value" : "动态建模",
+      "label" : "动态建模",
+      "path" : null,
+      "id" : "GROUP00000002",
+      "children" : [ {
+        "id" : "APP00000001",
+        "value" : "小应用管理",
+        "label" : "小应用管理",
+        "path" : "/lgc/pages$app$appList$index",
+        "component" : "组件",
+        "code" : "app",
+        "system" : null,
+        "app_index" : "01",
+        "appIcon" : "iconfont icon-application"
+      }, {
+        "id" : "APP00000004",
+        "value" : "工作台个性化",
+        "label" : "工作台个性化",
+        "path" : "/lgc/pages$workbench$DTdesign$index.js",
+        "component" : "组件",
+        "code" : "rolemgrdesign",
+        "system" : null,
+        "app_index" : "06",
+        "appIcon" : "iconfont icon-icon4 "
+      }, {
+        "id" : "APP00000018",
+        "value" : "流程监控",
+        "label" : "流程监控",
+        "path" : "/ifr/ifbp-bpm-service$instindex.html",
+        "component" : "组件",
+        "code" : "instance",
+        "system" : null,
+        "app_index" : "27",
+        "appIcon" : "iconfont icon-liuchengjiankong "
+      }, {
+        "id" : "APP00000016",
+        "value" : "流程定义管理",
+        "label" : "流程定义管理",
+        "path" : "/ifr/ifbp-bpm-service$index.html",
+        "component" : "组件",
+        "code" : "process",
+        "system" : null,
+        "app_index" : "28",
+        "appIcon" : "iconfont icon-liuchengdingyi "
+      }, {
+        "id" : "APP00000013",
+        "value" : "布局模板管理",
+        "label" : "布局模板管理",
+        "path" : "/ifr/uitemplate_web$uitemplate_ctr$uitemplate_design_ctr$manage",
+        "component" : "组件",
+        "code" : "uitemplateManage",
+        "system" : null,
+        "app_index" : "29",
+        "appIcon" : "iconfont icon-UImobanguanli "
+      }, {
+        "id" : "9cf30a3ac57e4d03b7f62fd21b6f7db2",
+        "value" : "模型管理",
+        "label" : "模型管理",
+        "path" : "/lgc/pages$app$information-set$index",
+        "component" : "组件",
+        "code" : "infoset",
+        "system" : null,
+        "app_index" : "30",
+        "appIcon" : "iconfont icon-bookmarks "
+      }, {
+        "id" : "APP00000017",
+        "value" : "编码规则定义",
+        "label" : "编码规则定义",
+        "path" : "/ifr/billcode$index.html",
+        "component" : "组件",
+        "code" : "billcode",
+        "system" : null,
+        "app_index" : "30",
+        "appIcon" : "iconfont icon-bianmaguizedingyi "
+      }, {
+        "id" : "APP00000027",
+        "value" : "自定义档案",
+        "label" : "自定义档案",
+        "path" : "/defdoc",
+        "component" : "组件",
+        "code" : "ifbpdefdoc",
+        "system" : null,
+        "app_index" : "30",
+        "appIcon" : "iconfont icon-shenqing"
+      } ]
+    }, {
+      "value" : "主数据与基础数据",
+      "label" : "主数据与基础数据",
+      "path" : null,
+      "id" : "GROUP00000003",
+      "children" : [ {
+        "id" : "APP00000021",
+        "value" : "客户管理",
+        "label" : "客户管理",
+        "path" : "/crm/crmList",
+        "component" : "组件",
+        "code" : "crm",
+        "system" : null,
+        "app_index" : "09",
+        "appIcon" : "iconfont icon-bumen"
+      }, {
+        "id" : "APP00000022",
+        "value" : "供应商管理",
+        "label" : "供应商管理",
+        "path" : "/dealer/agencylist",
+        "component" : "组件",
+        "code" : "agencylist",
+        "system" : null,
+        "app_index" : "10",
+        "appIcon" : "iconfont icon-bumen"
+      }, {
+        "id" : "d39c1a0f5a1044b3ab4f885b7e3f586c",
+        "value" : "参数配置",
+        "label" : "参数配置",
+        "path" : "/parameterDefinition",
+        "component" : "组件",
+        "code" : "cspz",
+        "system" : null,
+        "app_index" : "5",
+        "appIcon" : "iconfont icon-appicon"
+      } ]
+    }, {
+      "value" : "系统管理",
+      "label" : "系统管理",
+      "path" : null,
+      "id" : "GROUP00000004",
+      "children" : [ {
+        "id" : "APP00000019",
+        "value" : "任务中心",
+        "label" : "任务中心",
+        "path" : "/ifr/ifbp-bpm-service$flowTask-index.html",
+        "component" : "组件",
+        "code" : "bpmtaskcenter",
+        "system" : null,
+        "app_index" : "01",
+        "appIcon" : "iconfont icon-xitong "
+      }, {
+        "id" : "APP00000010",
+        "value" : "应用日志",
+        "label" : "应用日志",
+        "path" : "/ifr/busilog$index.html",
+        "component" : "组件",
+        "code" : "busilog",
+        "system" : null,
+        "app_index" : "19",
+        "appIcon" : "iconfont icon-yewurizhi "
+      }, {
+        "id" : "APP00000011",
+        "value" : "安全日志",
+        "label" : "安全日志",
+        "path" : "/ifr/securitylog$index.html",
+        "component" : "组件",
+        "code" : "securitylog",
+        "system" : null,
+        "app_index" : "20",
+        "appIcon" : "iconfont icon-anquanrizhi "
+      }, {
+        "id" : "APP00000009",
+        "value" : "调度任务管理",
+        "label" : "调度任务管理",
+        "path" : "/ifr/dispatch$index.html",
+        "component" : "组件",
+        "code" : "dispatch",
+        "system" : null,
+        "app_index" : "30",
+        "appIcon" : "iconfont icon-tiaodurenwuguanli "
+      } ]
+    } ],
+    "areaIcon" : "iconfont icon-xiaobujianshouquan ",
+    "areaKey" : null,
+    "areaUrl" : null,
+    "areaId" : "AREA00000001"
+  } ]
+}

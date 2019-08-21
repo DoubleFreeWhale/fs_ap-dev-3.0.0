@@ -1,0 +1,58 @@
+<div id="elToolsPanel" ref="elToolsPanel" v-bind:draggable=canDrag  class="dressTips" v-bind:class="{'ui-draggable' : canDrag}"
+  v-bind:style="{left: left+'px', top: top+'px', opacity: 1, display: display}" aria-disabled="false" v-on:dragstart="dragstart">
+  <!-- <div class="dressTitle t_c3" v-if="false" onselectstart="return false;" style="-moz-user-select:none;" v-bind:class="{'draggable' : canDrag}">
+    <i class="fa fa-arrows h4" v-show="canDrag"></i>&nbsp;
+    <span role="name">{{model.text}}</span>
+  </div> -->
+  <!-- <div class="dressPad clearfix"> -->
+    <div class="dressBtnBar">
+      <ul class="dressBtnUl" v-show="canDrag">
+        <li  title="拖拽" onselectstart="return false;" style="-moz-user-select:none;" v-bind:class="{'draggable' : canDrag}">
+          <span class="fa fa-arrows h4" style="cursor:move;"></span>
+        </li>
+      </ul>
+      <ul class="dressBtnUl" v-show="showAdd">
+        <li role="add" title="增加" v-on:click="addChild">
+          <span class="fa fa-plus"></span>
+        </li>
+      </ul>
+      <ul class="dressBtnUl" v-show="showFormAdd">
+          <li role="formAdd" title="增加分组" v-on:click="addFormPanel">
+            <span class="fa fa-plus"></span>
+          </li>
+        </ul>
+      <!-- <ul class="dressBtnUl">
+        <li role="parent" title="上一级" v-on:click="goToParent"><span class="fa fa-expand"></span></li>
+        <li role="child" title="下一级" v-on:click="goToChild"><span class="fa fa-compress"></span></li>
+      </ul> -->
+      <!-- <ul class="dressBtnUl">
+                <li role="left" title="左移" class="disabled" data-tips="3_t" showtipsel="1"><span class="fa fa-arrow-left"></span></li>
+                <li role="right" title="右移" data-tips="3_t" showtipsel="1" class=""><span class="fa fa-arrow-right"></span></li>
+            </ul> -->
+      <!-- <ul class="dressBtnUl">
+        <li role="manager" title="管理" v-on:click="manager"><span class="fa fa-cog"></span></li>
+      </ul> -->
+      <ul class="dressBtnUl">
+        <!--
+                <li role="copy" title="复制" data-tips="3_t"><span class="icon-copy"></span></li>
+                <li role="paste" title="粘贴" data-tips="3_t"><span class="icon-paste"></span></li>
+                <li role="cut" title="剪切" data-tips="3_t"><span class="icon-scissors"></span></li>
+                -->
+        <li role="delete" title="删除" data-tips="3_t" v-on:click="remove">
+          <span class="fa fa-trash-o"></span>
+        </li>
+      </ul>
+       <ul class="dressBtnUl" v-show="canDrag">
+        <li  title="置顶" onselectstart="return false;" style="-moz-user-select:none;" v-on:click="removeToTop">
+          <span class="fa fa-arrow-up" ></span>
+        </li>
+      </ul>
+       <ul class="dressBtnUl" v-show="canDrag">
+        <li  title="置底" onselectstart="return false;" style="-moz-user-select:none;" v-on:click="removeToBottom">
+          <span class="fa fa-arrow-down" ></span>
+        </li>
+      </ul>
+      
+    </div>
+  <!-- </div> -->
+</div>

@@ -1,0 +1,37 @@
+@charset "UTF-8";
+@import "common/var.css";
+
+@component-namespace el {
+  @b radio-group {
+    display: inline-block;
+    font-size: 0;
+    line-height: 1;
+    vertical-align: middle;
+
+    & .el-radio {
+      font-size: var(--radio-font-size);
+      margin-right:15px;
+      margin-left:0;
+    }
+    & .el-radio:last-of-type {
+      margin:0;
+    }
+
+  }
+}
+/* 调整：
+  原来方案,在非编辑态时,会渲染出多余的margin-left:15px,导致页面错乱;
+  调整为内部的el-checkbox__label 加margin-right 15px; 
+*/
+.el-radio-group .el-radio{
+  margin-right:0;
+}
+.el-radio-group .el-radio .tpl-label{
+  margin-right:15px;
+}
+.el-radio-group .el-radio .el-radio__label{
+  margin-right:15px
+}
+.mt-radio-group{
+  font-size: initial;
+}

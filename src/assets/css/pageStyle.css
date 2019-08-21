@@ -1,0 +1,558 @@
+/*.main-panel {
+  padding: 15px 24px;
+}*/
+
+
+/* title区域 begin */
+
+/*.title-container {
+  height: 18px;
+  margin-bottom: 15px;
+  position: relative;
+  padding: 0 0 0 16px;
+}*/
+
+/*.title-container .name {
+  float: left;
+  line-height: 18px;
+  font-size: 18px;
+  margin: 0;
+  color: #2D2D2D;
+}*/
+
+h2 {
+  text-shadow: none;
+  font-weight: normal;
+}
+
+
+/* title区域 end */
+
+
+/* 操作区域 begin */
+
+.el-button.button-no-radius {
+  border-radius: 0px;
+}
+
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+/* .fr .el-button{
+  padding-left: 10px;
+} */
+
+
+/* 操作区域 end */
+
+
+/* 主区域 begin */
+
+
+.form-button-div{
+
+  /* border-top: 1px dotted #cecece; */
+  /*padding-top: 10px;*/
+  /*padding-right: 15px;*/
+  /*position: relative;*/
+  /*margin-top: 16px;
+  margin-bottom: 4px;
+  overflow: hidden;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;*/
+}
+.form-button-div .el-button{
+  /*float: right;
+  margin-right: 16px;*/
+}
+
+.form-button-div .el-button:first-child{
+  /*margin-right: 0px;*/
+}
+
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  content: "";
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.el-pagination {
+  float: right;
+  margin-top: 16px;
+  padding: 0;
+  color: #475669;
+}
+
+
+.el-table tr.hover-row .el-table-operate-icon{
+  display: inline-block;
+}
+
+.el-table tr:hover .el-table-operate-icon{
+  display: inline-block;
+}
+/* 主区域 end */
+
+
+
+
+
+
+
+
+/* 下面是原来的，准备删除 */
+
+
+
+
+/* 主区域 end */
+
+#advanced-search {
+  display: block;
+  height: 56px;
+  padding: 10px 20px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #e3e3e3;
+  position: relative;
+}
+
+#advanced-search.hide {
+  display: none;
+  transition: all .5s ease;
+}
+
+#staff-list,
+#staff-detail {
+  margin-top: 20px;
+  background: #ffffff;
+  position: relative;
+}
+
+#advanced-search .el-col {
+  text-align: center;
+}
+
+#staff-list .yon-uitemplate {
+  margin: 20px 0;
+}
+
+
+/* 重置表格字体及表头背景，参考友人才 */
+
+#staff-list .el-table__header th {
+  font-size: 15px;
+  font-weight: 400;
+  color: #333;
+}
+
+#staff-list .el-table__body .cell {
+  font-size: 13px;
+  font-weight: normal;
+  color: #333;
+}
+
+#staff-list .el-table thead tr,
+#staff-list .el-table thead tr th {
+  background-color: #eee;
+}
+
+#staff-list .el-table__footer-wrapper thead div,
+#staff-list .el-table__header-wrapper thead div {
+  background-color: #eee;
+  color: #333;
+}
+
+
+/* 重置分页组件样式 */
+
+input.el-pagination__editor {
+  height: 28px;
+}
+
+
+.el-select-dropdown__item.selected {
+  background-color: #1BAEDE;
+}
+
+.el-select-dropdown__item.selected.hover {
+  background-color: #00A5E3;
+}
+
+.el-pagination .btn-prev {
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+
+.el-pagination .btn-next {
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+.el-pagination span.el-pagination__total,
+.el-pagination__sizes .el-input .el-input__inner,
+.el-pagination span.el-pagination__jump {
+  font-size: 12px;
+}
+
+.el-pagination .el-select .el-input {
+  width: 100px;
+}
+
+
+/* 列表操作样式修改 */
+
+#staff-list tr .el-button--text {
+  margin: 0 0.3125rem;
+}
+.main-panel .el-checkbox,
+.main-panel .el-radio-group {
+  line-height: 32px !important;
+}
+/*页面配置样式*/
+ .page-customization-main {
+  margin-top: 0.5rem;
+  height:calc(100% - 60px);
+}
+.page-customization-main .page-customization-left{
+  width: 20%;
+  height:100%;
+  background: #fff;
+  overflow-y: scroll;
+}
+.page-customization-left .el-tree{
+  border: none !important;
+}
+.page-customization-right{
+  width: calc(80% - 10px);
+  height:100%;
+  margin-left: 10px;
+}
+.addPageSubTable {
+  height:32px;
+  background: #fff;
+  border: 1px solid #F0F0F5;
+  text-align: center;
+  line-height: 42px;
+  /* margin-top: -20px; */
+  border-top: none;
+  /*z-index:2000 !important;*/
+  position: relative;
+  /*cursor: pointer;*/
+}
+.config-page {
+  clear: both;
+  margin-bottom: 16px;
+  background: #fff;
+}
+.config-page .el-row {
+  background: none !important;
+}
+.config-page .el-row--flex {
+  align-items: center !important;
+}
+#customOper span {
+  display: inline-block;
+  margin-left: 16px;
+  font-size: 12px;
+  cursor: pointer;
+}
+.uiBtnArea>span {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 14px;
+  /* height: 32px;
+  line-height:32px;
+  margin:0 8px;
+  margin-bottom:16px; */
+}
+.addConfigUiBtn{
+  height:32px;
+  background: #fff;
+  border: 1px solid #cecece;
+  text-align: center;
+  line-height: 32px;
+  /*margin-top: -20px;*/
+  /*z-index:2000 !important;*/
+  position: relative;
+}
+.configBtnAdd {
+  margin-bottom: 16px;
+}
+
+.configPageTpl{
+  overflow: hidden;
+}
+.configPageTpl .el-form-item__label {
+  text-align: left;
+}
+.dynamicAdd {
+  float:right;
+}
+.uiBtnArea {
+  text-align: right;
+  /* margin-top: 16px; */
+  /*position: absolute;
+  top:0;
+  right:0;
+  width: 500px;*/
+  /*margin: 16px 0;*/
+  /*margin-bottom: 18px;*/
+}
+.uiBtnAreaEdit{
+  cursor: pointer;
+  color: #5CB0E6;
+  height:16px;
+  margin-top: -3px;
+}
+.uiTitle {
+  margin-top: 16px;
+}
+.uiTitle span {
+  display: inline-block;
+  font-size: 14px;
+  /*margin-left: 16px;*/
+}
+.uiTitle span i {
+  color: #5CB0E6;
+  margin-left: 16px;
+  cursor: pointer;
+}
+.btnOper {
+  cursor: pointer;
+  color:#5CB0E6;
+  margin-left: 16px;
+}
+.subConfigBtn {
+  margin: 16px 0;
+}
+/*#basePanel .el-autocomplete ,#basePanel .el-select{
+  margin-top: 20px;
+  width: 20% !important;
+}*/
+
+/* 员工管理搜索按钮样式修改 */
+.staff-search-button,
+.staff-search-button:focus,
+.staff-search-button:hover {
+  color: #666666;
+}
+.staff-search-button i {
+  color: #C8C8CD;
+}
+.staff-search-button.active,
+.staff-search-button.active i {
+  color: #5CB0E6;
+}
+/* 搜索模板管理页面 */
+/* 按钮区域 */
+.el-tabs .ifbp-btn-line{
+  position: relative;
+  top: 16px;
+}
+
+.ifbp-btn-line{
+  display: block;
+  height: 16px;  /* 由于ifbp-template增加了16px的margin-top，因此减去16px */
+}
+/* 级联选择器样式 */
+.ifbp-btn-line .el-cascader{
+  margin-top: -8px;
+  min-width: 147px;
+}
+/* .ifbp-btn-line .el-cascader .el-input__inner{
+  border: none;
+  padding: 0;
+} */
+/* .ifbp-btn-line .el-cascader .el-input{
+  position:absolute;
+} 
+.ifbp-btn-line .el-cascader .el-cascader__label{
+  padding: 0 39px 0 8px;
+  top: -1px;
+  position: relative;
+  width: auto;
+  color: #5CB0E6;
+}
+.ifbp-btn-line .el-cascader__label span{
+  color: #333;
+} 
+.ifbp-btn-line .el-cascader .el-input__icon{
+  font-size: 18px;
+  width: 31px;
+  /* padding-top: 7px; 
+}
+.ifbp-btn-line .el-cascader input::-webkit-input-placeholder{
+/* WebKit browsers 
+  color: #5CB0E6;
+}
+.ifbp-btn-line .el-cascader input:-moz-placeholder{
+/* Mozilla Firefox 4 to 18 
+  color: #5CB0E6;
+  opacity: 1;
+}
+.ifbp-btn-line .el-cascader input::-moz-placeholder{
+  /* Mozilla Firefox 19+ 
+  color: #5CB0E6;
+  opacity: 1;
+}
+.ifbp-btn-line .el-cascader input:-ms-input-placeholder{
+  /* Internet Explorer 10+ 
+  color: #5CB0E6;
+} */
+/* 卡片样式 */
+.card-area{
+  margin: 16px -8px -16px; /* 高度与ifbp-template保持统一 */
+  padding: 0;
+}
+.card-area li{
+  display: inline-block;
+  margin: 0 0 16px;
+  box-sizing: border-box;
+  min-width: 344px;
+  height: 152px;
+  width: 33.3%;
+  border: none;
+  border-left: 8px solid #fff;
+  border-right: 8px solid #fff;
+}
+/* 卡片宽度媒体查询 */
+@media screen and (max-width: 769px) {
+  .card-area li{
+    width: 100%;
+    min-width: 336px;
+  }
+}
+@media screen and (min-width:770px) and (max-width:1113px) {
+  .card-area li{
+    width: 50%;
+  }
+}
+@media screen and (min-width:1114px) and (max-width:1457px) {
+  .card-area li{
+    width: 33.3%;
+  }
+}
+@media screen and (min-width:1458px) and (max-width:1801px) {
+  .card-area li{
+    width: 25%;
+  }
+}
+@media screen and (min-width:1802px){
+  .card-area li{
+    width: 20%;
+  }
+}
+.card-area li .card-div{
+  position: relative;
+  display: inline-block;
+  box-sizing: border-box;
+  width: 100%;
+  height: 152px;
+  padding: 16px 0 0 16px;
+  background: #FFFFFF;
+  border: 1px solid #F0F0F5;
+  border-radius: 4px;
+}
+.card-area li .card-div:hover{
+  background: rgba(243,246,249,0.50);
+  border: 1px solid #F0F0F5;
+  box-shadow: 0 2px 4px 0 #E2E8EF;
+}
+/* 卡片右侧大图标的样式 */
+.card-area .card-img{
+  font-size: 64px;
+  color: #DCEBFD;
+}
+/* 卡片功能按钮 */
+.card-area  .card-btn-area{
+  display: none;
+  height: 40px;
+  text-align: right;
+  padding: 0 16px;
+  position: absolute;
+  z-index: 100;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+.card-area .card-div:hover .card-btn-area{
+  display: block;
+}
+.card-area  .card-btn-area i{
+  margin: 12px 0 0 8px;
+  font-size: 18px;
+  color:#75787B;
+}
+.card-area  .card-btn-area i:hover{
+  cursor: pointer;
+  color:#0089FA;
+}
+
+
+/*hr使用的样式 begin*/
+.ifbp-layout-content-left-span{
+  font-size: 14px;
+  color: #2d2d2d;
+}
+.el-button.ifbp-layout-content-right-button,.el-button+.el-button.ifbp-layout-content-right-button{
+  font-size: 14px;
+  top: -7px;
+  position: relative;
+  min-width: auto;
+}
+
+.el-button.ifbp-layout-content-right-button.is-disabled,.el-button+.el-button.ifbp-layout-content-right-button.is-disabled{
+  color: rgba(0,137,250,0.50);
+}
+
+.el-dropdown.ifbp-layout-content-dropdown{
+  color: #5CB0E6;
+  top: -7px;
+}
+.ifbp-btn-line .fr .ifbp-layout-content-dropdown i{
+  margin-left:0px;
+  top: 0px;
+  position: relative;
+  color: #0089fa;
+}
+
+.ifbp-btn-line .fr .search-input-container i{
+    font-size: 16px;
+    margin-left: 0px;
+}
+
+.ifbp-layout-content-search{
+  top: -7px;
+  position: relative;
+  display: inline-block;
+}
+
+.ifbp-content-tabs.el-tabs>div{
+  margin-left:0px;
+}
+
+.marginleft24{
+  margin-left: 24px !important;
+}
+
+.marginleft16{
+  margin-left: 16px !important;
+}
+
+.maringTop0{
+  margin-top: 0px !important;
+}
+
+.paddingTop0{
+  padding-top: 0px !important;
+}

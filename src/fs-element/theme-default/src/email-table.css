@@ -1,0 +1,4 @@
+.mailTable, .mailTable tr, .mailTable tr td{ border:1px solid #E6EAEE; }
+.mailTable{ font-size: 12px; color: #71787E; }
+.mailTable tr td{ border:1px solid #E6EAEE; width: 150px; height: 35px; line-height: 35px; box-sizing: border-box; padding: 0 10px; }
+.mailTable tr td.column { background-color: #EFF3F6; color: #393C3E; }

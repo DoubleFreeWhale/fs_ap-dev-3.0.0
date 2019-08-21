@@ -1,0 +1,28 @@
+
+.arrow-kpi {
+    position: relative;
+}
+.arrow-kpi .arrow-kpi-num {
+    display: inline-block;
+    width: auto;
+    left: 18px;
+    position: relative;
+    font-size: 40px;
+}
+.arrow-kpi-oper {
+    position: relative;
+    display: inline-block;
+    top: -17px;
+    left: 14px;
+}
+.arrow-kpi-oper i {
+    font-size: 14px;
+}
+.arrow-kpi-percent {
+    position: relative;
+    font-size: 20px;
+    top: 0px;
+}
+.arrow-kpi .arrow-kpi-num-zero{
+    left: 1px;
+}

@@ -1,0 +1,7 @@
+.el-breadcrumb__item {
+  float: left;
+  line-height: 20px;
+  font-size: 14px;
+  margin: 0;
+  color: #333;
+}

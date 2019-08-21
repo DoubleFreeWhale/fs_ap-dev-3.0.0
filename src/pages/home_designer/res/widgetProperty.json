@@ -1,0 +1,39 @@
+{
+  "widget": {
+    "name": "小部件",
+    "directive": "v-comp v-dnd v-select",
+    "property": [
+      {
+        "name": "编码",
+        "model": "id",
+        "type": "string"
+      },
+      {
+        "name": "地址",
+        "model": "gadgeturl",
+        "type": "string"
+      },
+      {
+        "name": "layoutContext",
+        "model": ":layoutcontext",
+        "type": "string"
+      },
+      {
+        "name": "小部件列表",
+        "model": ":shortcutarr",
+        "type": "shortcut"
+      }
+    ]
+  },
+  "page": {
+    "name": "概览页",
+    "directive": "v-comp v-drop={muilt:true}",
+    "property": [
+      {
+        "name": "layoutContext",
+        "model": "layoutcontext",
+        "type": "string"
+      }
+    ]
+  }
+}

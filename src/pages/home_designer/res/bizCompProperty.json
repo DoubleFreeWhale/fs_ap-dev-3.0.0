@@ -1,0 +1,66 @@
+{
+	"ifbp-template": {
+    "name": "UI模板",
+    "directive": "v-comp v-drag v-select",
+    "property": [{
+      "name": "模板名称",
+      "model": "tplName",
+      "type": "string"
+    },{
+      "name": "业务类型",
+      "model": "funnode",
+      "type": "string"
+    },{
+      "name": "模板标识",
+      "model": "nexuskey",
+      "type": "string"
+    },{
+      "name": "ref",
+      "model": "ref",
+      "type": "string"
+    },{
+      "name": "数据源",
+      "model": ":tplData",
+      "type": "string"
+    },{
+      "name": "显示类型",
+      "model": "show-type",
+      "type": "select",
+      "options":[
+        {"value":"table","label":"表格"},
+        {"value":"form","label":"表单"}
+      ]
+    }]
+	},
+  "el-upload": {
+    "name": "上传",
+    "directive": "v-comp v-drag v-select",
+    "property": [{
+      "name": "上传地址",
+      "model": "action",
+      "type": "string"
+    },{
+      "name": "多文件上传",
+      "model": "multiple",
+      "type": "boolean",
+      "default":false
+    }]
+  },
+  "el-pagination": {
+    "name": "分页",
+    "directive": "v-comp v-drag v-select",
+    "property": [{
+      "name": "小型分页",
+      "model": "small",
+      "type": "boolean",
+      "default":false
+    }]
+  },
+  "el-steps": {
+    "name": "步骤条",
+    "directive": "v-comp v-drag v-select",
+    "property": [{
+    }]
+  }
+	
+}

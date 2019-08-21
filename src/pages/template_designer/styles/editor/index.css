@@ -1,0 +1,209 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  overflow: hidden;
+  font-family: "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
+}
+ #editor {
+  width: 100%;
+  height: 100%;
+  background-color: #FFF;
+  position: relative;
+}
+ #editor.isNewtem{
+ 	background-color: #F0F0F5;
+ }
+.form_div {
+  border-bottom: 1px solid #C8C8CD;
+}
+.isNewtem #app{
+	border: 0 solid #FFF;
+	background: #F0F0F5;
+}
+
+#app {
+  height: calc(100% - 88px);
+  border: 20px solid #FFF;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  padding: 30px;
+  background-color: #FFF;
+  min-height: 100%;
+  overflow: auto;
+}
+
+.form_title {
+  height: 52px;
+  line-height: 52px;
+  text-align: center;
+  font-size: 20px;
+  color: #2D2D2D;
+}
+
+.form-description {
+  width: 100%;
+  padding-left: 30%;
+  padding-right: 30%;
+  padding-bottom: 16px;
+  word-wrap: break-word;
+  text-align: left;
+  font-size: 14px;
+  color: #8E8E93;
+  position: relative;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+.el-col {
+  min-height: 51px;
+  border: 1px dashed rgba(86, 61, 124, .2)
+}
+
+.targetEle {
+  /* outline: 1px dashed #38adff; */
+}
+
+.activedEle {
+  outline: 1px solid #38adff
+}
+
+.drag-over {
+  outline: 2px dashed #38adff
+}
+
+.dressTips {
+  position: absolute;
+  background: #fff;
+  padding: 1px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+  z-index: 1000;
+  font: 14px/1.5 arial, "Microsoft Yahei", "Hiragino Sans GB", sans-serif;
+  font-size: 14px;
+  color: #666;
+}
+
+.dressTitle.draggable {
+  cursor: move;
+}
+
+.dressTitle {
+  background: #F1F0F5;
+  height: 32px;
+  line-height: 32px;
+  padding: 0 5px;
+}
+
+.dressPad {
+  padding: 10px 5px;
+}
+
+.dressBtnBar {
+  margin-left: -5px;
+}
+
+.dressBtnUl {
+  margin: 0 0 0 5px;
+  list-style: none;
+  padding: 0;
+  /* border: 1px solid #CBCBCB; */
+  overflow: hidden;
+  float: left;
+}
+
+.dressBtnUl li {
+  width: 28px;
+  text-align: center;
+  line-height: 28px;
+  float: left;
+  /* color: #7F7F7F; */
+  color: #409eff;
+  cursor: pointer;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+  vertical-align: middle;
+  text-transform: none;
+  font-weight: normal;
+  font-style: normal;
+  font-variant: normal;
+  font-family: 'icomoon';
+  line-height: 1;
+  /*speak: none;*/
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: none;
+  -moz-text-size-adjust: none;
+  -ms-text-size-adjust: none;
+}
+
+.el-row {
+  min-height: 51px;
+}
+
+.dorp_pos {
+  float: left;
+  width: 0px;
+  min-height: 51px;
+  height: 100%;
+  outline: 2px dashed #38adff
+}
+
+.dorp_pos_h {
+  /* float: left; */
+  width: 100%;
+  height: 20px;
+  outline: 2px dashed #38adff;
+}
+
+.el-form {
+  /* border: 1px dashed rgba(86, 61, 124, .2); */
+  padding-bottom: 20px;
+  margin-bottom: 10px;
+}
+
+.el-form-item {
+  /* border: 1px dashed rgba(86, 61, 124, .2); */
+  margin-bottom: 0px;
+  padding: 5px 0px;
+}
+
+.el-col .el-form-item {
+  border: 0px;
+}
+
+.el-table th.activedEle {
+  border: 1px solid #38adff;
+  border-bottom: 1px solid #38adff;
+}
+
+.el-table th.drag-over {
+  border: 2px dashed #38adff;
+  border-bottom: 2px dashed #38adff;
+}
+
+.boxscroll {
+  overflow-y: hidden;
+  overflow-x: auto; 
+  /* overflow: auto; */
+}
+
+.el-form-item__label {
+  columns: #666666;
+}
+
+.el-form-panel{
+  min-height:40px;
+}
+
+.el-form-panel.el-form-panel-last{
+  border-bottom: 1px;
+}
+
+.ifbp-panel-body{
+  min-height: 50px;
+}

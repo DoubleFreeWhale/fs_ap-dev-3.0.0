@@ -1,0 +1,19 @@
+@charset "UTF-8";
+@import "common/var.css";
+
+.ifbp-multilingual-container .el-select {
+  width: 100%;
+  visibility: hidden;
+  transform: translateY(-100%);
+}
+.ifbp-multilingual-container .input-lang-type {
+  margin-right: 4px;
+  cursor: pointer;
+}
+
+.ifbp-multilingual-container{
+  height: var(--input-height);
+}
+.ifbp-multilingual-container .el-input-group__append i {
+  vertical-align: middle;
+}

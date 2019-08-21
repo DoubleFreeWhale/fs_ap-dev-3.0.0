@@ -1,0 +1,41 @@
+.ifbp-popover {
+    min-height: 64px;
+    max-height: 290px;
+    min-width: 50px;
+    max-width: 400px;
+    padding: 0 16px 16px 16px !important;
+}
+.ifbp-ref-tips-content {
+    max-height: 200px;
+    overflow: scroll;
+}
+.ifbp-popover.ifbp-popover-close{
+    padding: 16px !important;
+}
+.ifbp-tips-close  {
+    width: 100%;
+    text-align: right;
+    padding: 7px 0;
+    cursor: pointer;
+    color:#C8C8CD;
+    margin-left: 8px;
+}
+.ifbp-tips-close  i {
+    font-size: 16px;
+    vertical-align: middle;
+}
+.ifbp-tips-close:hover {
+    color:#5CB0E6;
+}
+.ifbp-popover-i {
+    color: #5CB0E6;
+    cursor: pointer;
+    font-size: 16px !important;
+}
+.ref-tips-oper {
+    margin-top: 16px;
+    text-align: right;
+}
+.ref-tips-oper .el-button {
+    min-width: inherit;
+}

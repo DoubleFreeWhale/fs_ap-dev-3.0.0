@@ -1,0 +1,20 @@
+.s-select__item{
+    font-size: 14px;
+    padding: 8px 10px;
+    position: relative;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #48576a;
+    height: 36px;
+    line-height: 1.5;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+.s-select__item.hover{
+    background-color: #eff3f6;
+}
+.s-select__item.selected{
+    background-color: #00A5E3;
+    color: #fff;
+}

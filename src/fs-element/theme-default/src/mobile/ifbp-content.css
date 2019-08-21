@@ -1,0 +1,9 @@
+.ifbp-content{
+  display: none;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.ifbp-content-show{
+  display: block;
+}

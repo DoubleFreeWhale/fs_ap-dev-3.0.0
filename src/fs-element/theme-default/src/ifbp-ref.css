@@ -1,0 +1,33 @@
+@charset "UTF-8";
+@import "common/var.css";
+
+/* letting height of select ref self-adjust */
+.ref-container .el-autocomplete {
+  height: var(--input-height);
+}
+
+.ref-container .el-tree > .el-tree-node.is-expanded {
+  overflow: hidden;
+}
+
+/* .ref-container .el-tree {
+  overflow: auto;
+  height: 308px;
+} */
+
+.ref-container .el-dialog__body {
+  height: 380px;
+  box-sizing: content-box;
+}
+
+.yon-form .ref-dialog .el-input {
+  width: 100%;
+}
+
+.yon-form .ref-dialog .el-input__inner {
+  width: 100%;
+}
+
+.ref-container .ref-input-clear-btn {
+  padding: 8px;
+}

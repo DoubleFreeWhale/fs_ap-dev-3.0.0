@@ -1,0 +1,81 @@
+{
+  "status" : 1,
+  "msg" : "success",
+  "data" : [ {
+    "value" : "开发配置",
+    "label" : "开发配置",
+    "children" : [ {
+      "value" : "开发配置",
+      "label" : "开发配置",
+      "path" : null,
+      "id" : "GROUP00000005",
+      "children" : [ {
+        "id" : "02b414090df348f2abb9120949d78563",
+        "value" : "ovp开发",
+        "label" : "ovp开发",
+        "path" : "demo",
+        "component" : "组件",
+        "code" : "ovp",
+        "system" : null,
+        "app_index" : 0,
+        "app_desc" : "",
+        "urltype" : "view",
+        "tileType" : "",
+        "iconContent" : "",
+        "chartType" : "",
+        "chartUrl" : "",
+        "chartTitle" : null,
+        "numberUrl" : "",
+        "numberUnit" : "",
+        "numberColor" : "",
+        "numberCondition" : 0,
+        "numberValue" : 0,
+        "numberConditionColor" : "",
+        "contents": [
+          {
+            "tileType": "icon",
+            "chartType": "",
+            "chartUrl": "",
+            "appIcon": "iconfont ifbp-icon-edit light-blue",
+            "numberUrl":"",
+            "numberUnit":"",
+            "numberColor":"",
+            "iconContent":"",
+            "appIconColor":""
+          },
+          {
+            "tileType": "charts",
+            "chartType": "lineChart",
+            "appIcon": "",
+            "chartUrl":"/testBullet",
+            "numberUrl":"",
+            "numberUnit":"",
+            "numberColor":"",
+            "iconContent":"",
+            "appIconColor":""
+          },
+          {
+            "tileType": "api",
+            "chartType": "",
+            "appIcon": "",
+            "chartUrl":"",
+            "numberUrl":"/test",
+            "numberUnit":"",
+            "numberColor":"",
+            "iconContent":"",
+            "appIconColor":""
+          }
+        ],
+        "chartTitle" : null,
+        "footer" : "",
+        "styleType" : "1*1",
+        "backgroundImg" : null,
+        "appIcon" : "iconfont ifbp-icon-gavel light-blue "
+      } ]
+    } ],
+    "areaIcon" : "iconfont icon-xiaobujianshouquan ",
+    "areaKey" : "ap-pub,ap-fbp-pub",
+    "areaUrl" : null,
+    "areaId" : "AREA00000001"
+  } ]
+}

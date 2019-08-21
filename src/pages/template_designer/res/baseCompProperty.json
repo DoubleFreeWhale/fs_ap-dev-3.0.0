@@ -1,0 +1,124 @@
+{
+  "el-button": {
+    "name": "按钮",
+    "directive": "v-comp v-drag v-select",
+    "property": [{
+      "name": "名称",
+      "model": "template",
+      "type": "string",
+      "default": "按钮"
+    }, {
+      "name": "类型",
+      "model": "type",
+      "type": "string",
+      "default": "primary"
+    }, {
+      "name": "尺寸",
+      "model": "size",
+      "type": "string"
+    }]
+  },
+  "div": {
+    "name": "div",
+    "directive": "v-comp v-drag v-select v-drop={muilt:true}",
+    "property": [{
+      "name": "内容",
+      "model": "template",
+      "type": "string",
+      "default": "div"
+    }, {
+      "name": "样式",
+      "model": "style",
+      "type": "string",
+      "default": "color:red"
+    }]
+  },
+  "el-tag": {
+    "name": "标签",
+    "directive": "v-comp v-drag v-select",
+    "property": [{
+      "name": "类型",
+      "model": "type",
+      "type": "string",
+      "default": "primary"
+    }, {
+      "name": "内容",
+      "model": "template",
+      "type": "string",
+      "default": "标签"
+    }, {
+      "name": "是否可关闭",
+      "model": "closable",
+      "type": "booean",
+      "default": "false"
+    }]
+  },
+  "el-switch": {
+    "name": "开关",
+    "directive": "v-comp v-drag v-select",
+    "property": [{
+      "name": "打开时文字",
+      "model": "on-text",
+      "type": "string"
+    }, {
+      "name": "关闭时文字",
+      "model": "off-text",
+      "type": "string"
+    }]
+  },
+  "img": {
+    "name": "图片",
+    "directive": "v-comp v-drag v-select",
+    "property": [{
+      "name": "src",
+      "model": "src",
+      "type": "string"
+    },{
+      "name": "样式",
+      "model": "style",
+      "type": "style",
+      "default":"width:200px;height:200px"
+    }]
+  },
+  "el-slider": {
+    "name": "滑块",
+    "directive": "v-comp v-drag v-select",
+    "property": [{
+      "name": "最小值",
+      "model": "min",
+      "type": "number",
+      "default":0
+    },{
+      "name": "最大值",
+      "model": "max",
+      "type": "number",
+      "default":100
+    },{
+      "name": "步长",
+      "model": "step",
+      "type": "number",
+      "default":1
+    }]
+  },
+  "el-progress": {
+    "name": "进度条",
+    "directive": "v-comp v-drag v-select",
+    "property": [{
+      "name": "进度条类型",
+      "model": "percentage",
+      "type": "number",
+      "default":0
+    },{
+      "name": "最大值",
+      "model": "max",
+      "type": "number",
+      "default":100
+    },{
+      "name": "步长",
+      "model": "step",
+      "type": "number",
+      "default":1
+    }]
+  }
+
+}

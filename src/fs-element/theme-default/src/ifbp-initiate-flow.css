@@ -1,0 +1,88 @@
+
+.step .el-step__head.is-text {
+    width: 44px !important;
+    height: 44px !important;
+}
+/* 第一步流程的样式 */
+.step .first-step .el-step__head.is-text {
+    background-color: #00a753;
+    border-color: #00a753;
+}
+.step .first-step.el-step.is-horizontal .el-step__line {
+    background-color: #00a753;
+}
+/* 未审批的第二步样式(不包含驳回) */
+.step .second-step .el-step__head.is-text {
+    background-color: #c0ccda !important;
+    border-color: #c0ccda !important;
+}
+/* 未审批的第二步样式--驳回 */
+.step .second-step.second-step-reject .el-step__head.is-text {
+    background-color: #ff9500 !important;
+    border-color: #ff9500 !important;
+}
+.step .second-step.second-step-reject.el-step.is-horizontal .el-step__line {
+    background-color: #ff9500;
+}
+
+/* 审批第二步同意 */
+.step .second-step-agree .el-step__head.is-text {
+    background-color: #00a753;
+    border-color: #00a753;
+}
+.step .second-step-agree.el-step.is-horizontal .el-step__line {
+    background-color: #00a753;
+}
+/* 结束状态的时候样式 */
+.step .el-step__head.is-text.is-finish {
+    background-color: #00a753;
+    border-color: #00a753;
+}
+.step .end-false .el-step__head.is-text {
+    width: 44px !important;
+    height: 44px !important;
+    background-color: #c0ccda !important;
+    border-color: #c0ccda !important;
+}
+/* 审批最后一步（拒绝，不同意） */
+.step .refuse-status .el-step__head.is-text {
+    background-color: #ff3b30;
+    border-color: #ff3b30;
+}
+/* 审批最后一步--驳回 */
+.step .refuse-status.reject-status .el-step__head.is-text {
+    background-color: #ff9500;
+    border-color: #ff9500;
+}
+/* 审批最后一步（同意） */
+.step .agree-status .el-step__head.is-text {
+    background-color: #00a753;
+    border-color: #00a753;
+}
+.step .el-step.is-horizontal .el-step__line {
+    top: 22px !important;
+    margin-left: 14px;
+}
+/* 审批第二步同意时线的样式 */
+.step .second-status.el-step.is-horizontal .el-step__line {
+    background-color: #00a753;
+}
+/* 审批第二步不同意(不包含驳回)时线的样式 */
+.step .refuse-second-status.el-step.is-horizontal .el-step__line {
+    background-color: #ff3b30;
+}
+/* 审批第二步不同意--驳回时线的样式 */
+.step
+.refuse-second-status.reject-second-status.el-step.is-horizontal
+.el-step__line {
+    background-color: #ff9500;
+}
+/* reject-second-status */
+.btnLists .more-btn .btn-more {
+    width: 32px !important;
+    min-width: 32px !important;
+    padding-left: 1px !important;
+}
+.btnLists .more-btn .btn-more::before {
+    margin-left: 6px !important;
+}

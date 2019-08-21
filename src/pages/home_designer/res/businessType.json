@@ -1,0 +1,13 @@
+{
+  "Text": "el-input",
+  "TextArea": "el-textarea",
+  "NumberComponent": "el-number",
+  "RadioBox": "el-radio",
+  "CheckBox": "el-checkbox",
+  "Select": "el-select",
+  "DateComponent": "el-date-picker",
+  "Money": "el-money",
+  "Reference": "el-ref",
+  "DataTable": "el-table",
+  "ImageComponent": "ifbp-image"
+}

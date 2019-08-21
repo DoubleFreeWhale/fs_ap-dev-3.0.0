@@ -1,0 +1,29 @@
+[ {
+    "name": "双列",
+    "key": "row-12-12",
+    "type":"layout",
+    "content": "<el-row v-comp v-drop v-select><el-col v-comp v-drop v-select :md=12 sm=24></el-col><el-col v-comp v-drop v-select :md=12 sm=24></el-col></el-row>",
+    "icon":"fa fa-pause"
+},{
+    "name": "三列",
+    "key": "row-8-8-8",
+    "type":"layout",
+    "content": "<el-row v-comp v-drop v-select><el-col v-comp v-drop v-select :md=8 :sm=24></el-col><el-col v-comp v-drop v-select :md=8 :sm=24></el-col><el-col v-comp v-drop v-select :md=8 :sm=24></el-col></el-row>",
+    "icon":"fa fa-bars fa-rotate-90"
+},{
+    "name": "四列",
+    "key": "row-6-6-6-6",
+    "type":"layout",
+    "content": "<el-row v-comp v-drop v-select><el-col v-comp v-drop v-select :md=6 :sm=24></el-col><el-col v-comp v-drop v-select :md=6 :sm=24></el-col><el-col v-comp v-drop v-select :md=6 :sm=24></el-col><el-col v-comp v-drop v-select :md=6 :sm=24></el-col></el-row>",
+    "icon":"fa fa-align-justify fa-rotate-90"
+},{
+    "name": "面板组",
+    "key": "ifbp-panel-group",
+    "type":"layout",
+    "icon":"fa fa-list-alt"
+},{
+    "name": "标题面板",
+    "key": "ifbp-panel",
+    "type":"layout",
+    "icon":"fa fa-list-alt"
+}]

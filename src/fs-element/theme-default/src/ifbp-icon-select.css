@@ -1,0 +1,27 @@
+.icon-list .el-tabs--card > .el-tabs__header .el-tabs__item.is-closable:hover {
+    padding-left: 16px;
+    padding-right: 16px;
+}
+.icon-list .el-tabs--card > .el-tabs__header .el-tabs__item {
+    transition: none;
+}
+.icon-list .el-tabs--card > .el-tabs__header .el-tabs__item.is-active {
+    border-radius: 0;
+    border-color: #F0F0F5;
+    border-bottom-color: #fff;
+}
+.icon-list .el-tabs .el-icon-close {
+    display: none;
+}
+.icon-list .el-tabs .el-tabs__header {
+    margin: 0;
+    margin-left: -1px;
+    margin-top: -1px;
+}
+.icon-select-color .el-color-picker__trigger {
+    height: 32px;
+}
+.icon-select-color .el-color-picker__color {
+    height: 20px;
+    width: 20px;
+}

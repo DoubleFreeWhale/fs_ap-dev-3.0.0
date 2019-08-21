@@ -1,0 +1,40 @@
+.main-panel {
+  /*padding: 8px 24px 16px 24px;*/
+  box-sizing: border-box;
+  position: relative;
+  /*background: #F0F0F5;*/
+}
+.main-panel-blank{
+  height: calc(100% - 16px);
+  /* 因为康复的业务申请修改之后会打不开，因为暂时去掉此样式，如果有冲突再看
+  position: absolute;
+  width: calc(100% - 48px); */
+}
+.no-padding{
+  padding:0;
+};
+.main-panel.no-padding .main-panel-blank{
+  width:100%;
+};
+/* 吸顶图钉 affix */
+.affix-wrap {
+  width: 100%;
+}
+.affix-top {
+  width: 100%;
+  height: 8px;
+  position: absolute;
+  /* top: 459px; 动态计算 */
+  background: #f0f0f5;
+  z-index: 20;
+}
+.affix-real {
+  position: absolute;
+  width: 100%;
+  z-index: 20;
+  top: 0;
+}
+.affix-fake {
+  position: static;
+  width: 100%;
+}

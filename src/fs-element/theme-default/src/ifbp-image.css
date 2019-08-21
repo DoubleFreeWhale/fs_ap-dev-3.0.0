@@ -1,0 +1,66 @@
+
+.ifbp-image .el-upload {
+    border: 1px dashed #d9d9d9;
+    border-radius: 6px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    width: 150px;
+    /* vertical-align: middle; */
+}
+/* .el-upload .avatar{
+	width: auto !important;
+  height: auto!important;
+  border-radius: 6px !important;
+} */
+.ifbp-image .el-upload:hover {
+    border-color: #409eff;
+}
+.ifbp-image .avatar-uploader-icon {
+    font-size: 28px;
+    color: #8c939d;
+    width: 53px;
+    height: 200px;
+    line-height: 200px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.ifbp-image .ifbp-default{
+    height: 200px;
+}
+.ifbp-image-is-default {
+    width: 53px !important;
+    height: 200px;
+    line-height: 200px;
+    text-align: center;
+    vertical-align: middle;
+}
+.ifbp-image-oper {
+    width: 152px;
+    display: none;
+    z-index: 1000;
+    position: absolute;
+    bottom:0;
+    left: 0;
+    height: 48px;
+    background-color: rgba(0,0,0,0.50);
+    line-height: 48px;
+    text-align: right;
+}
+.ifbp-image-oper i {
+    color: #fff;
+    cursor: pointer;
+    font-size: 18px;
+    margin-right: 16px;
+}
+.ifbp-image-oper i:hover {
+    color:#5CB0E6;
+}
+.ifbp-image:hover  .ifbp-image-oper {
+    display: block;
+}
+
+/* .ifbp-image-avatar {
+    width: 53px;
+} */

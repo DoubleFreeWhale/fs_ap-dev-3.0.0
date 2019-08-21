@@ -1,0 +1,88 @@
+[{
+        "name": "一行/列",
+        "key": "row-24",
+        "type": "layout",
+        "content": "<el-row :gutter='16' v-comp v-drop v-select><el-col v-comp v-drop v-select class='ui-grid' :md=24 :sm=24></el-col></el-row>"
+    }
+
+    ,
+    {
+        "name": "两列1:1",
+        "key": "row-12-12",
+        "type": "layout",
+        "content": "<el-row :gutter='16' v-comp v-drop v-select><el-col v-comp v-drop v-select class='ui-grid' :md=12 :sm=24></el-col><el-col v-comp v-drop v-select class='ui-grid' :md=12 :sm=24></el-col></el-row>"
+    }
+
+    ,
+    {
+        "name": "两列1:3",
+        "key": "row-8-16",
+        "type": "layout",
+        "content": "<el-row :gutter='16' v-comp v-drop v-select><el-col v-comp v-drop v-select class='ui-grid' :md=8 :sm=24></el-col><el-col v-comp v-drop v-select class='ui-grid' :md=16 :sm=24></el-col></el-row>"
+    }
+
+    ,
+    {
+        "name": "两列3:1",
+        "key": "row-18-6",
+        "type": "layout",
+        "content": "<el-row :gutter='16' v-comp v-drop v-select><el-col v-comp v-drop v-select class='ui-grid' :md=18 :sm=24></el-col><el-col v-comp v-drop v-select class='ui-grid' :md=6 :sm=24></el-col></el-row>"
+    }
+
+    ,
+    {
+        "name": "三列1:1:2",
+        "key": "row-6-6-12",
+        "type": "layout",
+        "content": "<el-row :gutter='16' v-comp v-drop v-select><el-col v-comp v-drop v-select class='ui-grid el-col el-col-6' :md=6 :sm=24></el-col><el-col v-comp v-drop v-select class='ui-grid el-col el-col-6' :md=6 :sm=24></el-col><el-col v-comp v-drop v-select class='ui-grid el-col el-col-12' :md=12 :sm=24></el-col></el-row>"
+    }
+
+    ,
+    {
+        "name": "三列1:2:1",
+        "key": "row-6-12-6",
+        "type": "layout",
+        "content": "<el-row :gutter='16' v-comp v-drop v-select><el-col v-comp v-drop v-select class='ui-grid el-col el-col-6' :md=6 :sm=24></el-col><el-col v-comp v-drop v-select class='ui-grid el-col el-col-12' :md=12 :sm=24></el-col><el-col v-comp v-drop v-select class='ui-grid el-col el-col-6' :md=6 :sm=24></el-col></el-row>"
+    }
+
+    ,
+    {
+        "name": "三列2:1:1",
+        "key": "row-12-6-6",
+        "type": "layout",
+        "content": "<el-row :gutter='16' v-comp v-drop v-select><el-col v-comp v-drop v-select class='ui-grid el-col el-col-12' :md=12 :sm=24></el-col><el-col v-comp v-drop v-select class='ui-grid el-col el-col-6' :md=6 :sm=24></el-col><el-col v-comp v-drop v-select class='ui-grid el-col el-col-6' :md=6 :sm=24></el-col></el-row>"
+    }
+
+    ,
+    {
+        "name": "四列1:1:1:1",
+        "key": "row-6-6-6-6",
+        "type": "layout",
+        "content": "<el-row :gutter='16' v-comp v-drop v-select><el-col v-comp v-drop v-select class='ui-grid' :md=6 :sm=24></el-col><el-col v-comp v-drop v-select class='ui-grid' :md=6 :sm=24></el-col><el-col v-comp v-drop v-select class='ui-grid' :md=6 :sm=24></el-col><el-col v-comp v-drop v-select class='ui-grid' :md=6 :sm=24></el-col></el-row>"
+    }
+
+    ,
+    {
+        "name": "两行",
+        "key": "2row",
+        "type": "layout",
+        "content": "<el-row :gutter='16' v-comp v-drop v-select><el-col v-comp v-drop v-select class='ui-grid' :md=24 :sm=24></el-col><el-col v-comp v-drop v-select class='ui-grid' :md=24 :sm=24></el-col></el-row>"
+    }
+
+    ,
+    {
+        "name": "三行",
+        "key": "3row",
+        "type": "layout",
+        "content": "<el-row :gutter='16' v-comp v-drop v-select><el-col v-comp v-drop v-select class='ui-grid' :md=24 :sm=24></el-col><el-col v-comp v-drop v-select class='ui-grid' :md=24 :sm=24></el-col><el-col v-comp v-drop v-select class='ui-grid' :md=24 :sm=24></el-col></el-row>"
+    }
+
+    ,
+    {
+        "name": "四行",
+        "key": "4row",
+        "type": "layout",
+        "content": "<el-row :gutter='16' v-comp v-drop v-select><el-col v-comp v-drop v-select class='ui-grid' :md=24 :sm=24></el-col><el-col v-comp v-drop v-select class='ui-grid' :md=24 :sm=24></el-col><el-col v-comp v-drop v-select class='ui-grid' :md=24 :sm=24></el-col><el-col v-comp v-drop v-select class='ui-grid' :md=24 :sm=24></el-col></el-row>"
+    }
+
+]

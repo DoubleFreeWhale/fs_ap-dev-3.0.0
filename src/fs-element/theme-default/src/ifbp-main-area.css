@@ -1,0 +1,23 @@
+.list-main-container {
+  position: relative;
+  margin-top: 8px;
+  padding: 16px 48px;
+  background: #fff;
+}
+
+.detail-main-container {
+  position: relative;
+  /*margin-bottom: 72px;*/
+  background: #fafafa;
+  padding: 16px 48px 55px 48px;
+  /* background: #eeeff1; */
+}
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  content: "";
+}
+
+.clearfix:after {
+  clear: both;
+}

@@ -1,0 +1,89 @@
+@import "common/var.css";
+
+.ifbp-panel {
+  background-color: #fff;
+  margin: 0px;
+  padding: 16px;
+  /* border-top: var(--color-bg) solid 8px; */
+  border-top: #fafafa solid 8px;
+}
+
+/*.ifbp-panel.ifbp-panel-first {*/
+.ifbp-panel:first-child {
+  /* border-top: 0px; */
+  margin-top: 0px;
+}
+
+.ifbp-panel-title {
+  height: 24px;
+}
+.ifbp-main-panel-title{
+  height: 36px;
+  margin-top: 4px;
+ /* border-bottom: 1px solid #F0F0F5;*/
+}
+
+.ifbp-panel-title .iconleft {
+  float: left;
+  /* height: 16px; */
+  /* line-height: 16px; */
+}
+.ifbp-panel-title i {
+  color: var(--color-primary);
+  /*margin-left: 16px;*/
+  margin-left: 16px;
+  /*border-radius: 50%;*/
+  cursor: pointer;
+  font-size: 16px;
+  position: relative;
+  top: 2px;
+}
+.ifbp-panel-title .title-sub {
+  font-size: 16px;
+  color: #2D2D2D;
+  font-weight: normal;
+  cursor: pointer;
+}
+
+.ifbp-panel-body {
+  /*margin-top: 32px;*/
+  /* border-top: 1px solid #efefef; */
+  /* padding-top: 25px; */
+}
+/* .ifbp-panel-body .el-form {
+  margin-top: 20px;
+} */
+.ifbp-panel-icons-right {
+  float:right;
+}
+/* .ifbp-panel-body .el-table {
+  margin-top: 20px;
+} */
+.ifbp-panel-icons-right i{
+  color: #C8C8CD;
+}
+
+
+.ifbp-panel-icons-right i:hover{
+  color: #75787B;
+}
+
+i.ifbp-icon-angle-down{
+
+  transition: transform 0.3s ease-in-out;
+  color:#75787B;
+  margin-left:0px;
+  margin-right: 8px;
+
+}
+
+.ifbp-panel-mobile {
+  background-color: #F0F0F5;
+  border: 1px solid #E6E6EB;
+  border-radius: 8px;
+}
+.ifbp-panel-mobile i.ifbp-icon-angle-down {
+  margin-right: 0;
+  margin-left: 1rem;
+  top: 0;
+}

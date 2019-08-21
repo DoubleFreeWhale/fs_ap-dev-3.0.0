@@ -1,0 +1,125 @@
+
+.yon-title{
+    height: 54px;
+    line-height: 54px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #D4D4D4;
+    font-weight: 700;
+    color: #333;
+    font-size: 14px;
+}
+
+.yon-uitemplate{
+    background: white;
+}
+.yon-grid div.el-form-item__content{
+    width: 100%;
+}
+.yon-form .yonCount-2 div.el-form-item__content{
+    width: 60%;
+}
+.yon-form .yonCount-1 div.el-form-item__content{
+    width: 80%;
+}
+.yon-form .yonCount-3 div.el-form-item__content{
+    width: 70%;
+}
+.yon-form .el-input__inner{
+    width:218px;
+    height:36px;
+    line-height: 16px;
+    font-size: 14px;
+    border: 1px solid #CECECE;
+}
+.yon-form .el-input{
+    width:218px;
+}
+.yon-form .el-form-item__label {
+    font-size: 14px;
+}
+.yon-form .el-textarea__inner{
+    width:218px;
+    border: 1px solid #CECECE;
+}
+.yon-grid label.el-form-item__label{
+    width: 100px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.yon-form label.el-form-item__label{
+    width: 100px;
+    padding-left: 10px;
+    white-space: nowrap;
+    line-height: 16px;
+    padding: 10px 12px 10px 0;
+}
+.yon-form .yonCount-1 label.el-form-item__label{
+    width: 20%;
+}
+.yon-form .yonCount-2 label.el-form-item__label{
+    width: 40%;
+}
+.yon-form .yonCount-3 label.el-form-item__label{
+    width: 30%;
+}
+.yon-form div.tpl-label{
+    white-space: nowrap;
+    /* width: 218px; */
+    width: 100%;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    line-height: 16px;
+    font-size: 14px;
+    vertical-align: top;
+    display: inline-block;
+}
+.yon-form .ref-container {
+    display: inline-block;
+}
+.yon-form .el-autocomplete {
+    width: 100%;
+}
+.yon-form div.tpl-label,.yon-form .el-checkbox-group {
+    display: inline-block;
+}
+
+.yon-form .el-checkbox {
+    margin-right: 15px;
+}
+.yon-form .el-checkbox+.el-checkbox {
+    margin-left: 0px;
+}
+
+.yon-form .yonCount-1 .el-select .el-input,.yon-form .yonCount-2 .el-select .el-input,.yon-form .yonCount-3 .el-select .el-input{
+    width: 100%;
+}
+.yon-form .yonCount-1 .ref-container .el-input,.yon-form .yonCount-2 .ref-container .el-input,.yon-form .yonCount-3 .ref-container .el-input{
+    width: 100%;
+}
+.yon-form .yonCount-1 .el-textarea__inner,.yon-form .yonCount-1 .el-input__inner{
+    width: 100%;
+}
+.yon-form .yonCount-2 .el-textarea__inner,.yon-form .yonCount-2 .el-input__inner{
+    width: 100%;
+}
+.yon-form .yonCount-3 .el-textarea__inner,.yon-form .yonCount-3 .el-input__inner{
+    width: 100%;
+}
+.yon-form .yonCount-1 div.tpl-label,.yon-form .yonCount-1 .el-select,.yon-form .yonCount-1 .el-input,.yon-form .yonCount-1 .el-checkbox-group,.yon-form .yonCount-1 .el-textarea,.yonCount-1 .ref-container{
+    width: 100%;
+}
+.yon-form .yonCount-2 div.tpl-label,.yon-form .yonCount-2 .el-select,.yon-form .yonCount-2 .el-input,.yon-form .yonCount-2 .el-checkbox-group,.yon-form .yonCount-2 .el-textarea,.yonCount-2 .ref-container{
+    width: 100%;
+}
+.yon-form .yonCount-3 div.tpl-label,.yon-form .yonCount-3 .el-select,.yon-form .yonCount-3 .el-input,.yon-form .yonCount-3 .el-checkbox-group,.yon-form .yonCount-3 .el-textarea,.yonCount-3 .ref-container{
+    width: 100%;
+}
+/*.yon-grid .cell>div{
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}*/
+.yon-required .el-input__inner::-webkit-input-placeholder,.yon-required .el-textarea__inner::-webkit-input-placeholder{
+    color:red;
+}

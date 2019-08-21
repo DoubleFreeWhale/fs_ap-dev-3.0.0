@@ -1,0 +1,26 @@
+
+.el-widget{
+    background-color: #FFF;
+    margin: 15px;
+}
+.el-widget-heading{
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    position: relative;
+    padding: 0;
+    border-bottom: 1px solid #e0e0e0;
+}
+.el-widget-title{
+    margin-top: 0;
+    margin-bottom: 0;
+    display: block;
+    padding: 10px 30px;
+    font-size: 16px;
+    color: #424242;
+    font-weight: 400;
+}
+.el-widget-body{
+    padding: 30px 30px;
+    position: relative;
+    padding-top: 30px;
+}

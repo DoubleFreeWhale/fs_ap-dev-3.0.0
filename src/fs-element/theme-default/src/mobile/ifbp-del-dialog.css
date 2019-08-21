@@ -1,0 +1,52 @@
+.ifbp-mt-del-dialog .el-dialog--tiny{
+    width: 80%;
+    text-align: center;
+    max-width: 80%;
+    min-width: 50%;
+    border-radius: 14px;
+}
+
+.ifbp-mt-del-dialog .el-dialog__header{
+    height: 48px;
+    border-bottom: 0;
+    font-family: PingFangSC-Semibold;
+    font-size: 17px;
+    color: #000000;
+    letter-spacing: -0.41px;
+    text-align: center;
+    line-height: 48px;
+}
+.ifbp-mt-del-dialog .el-button+.el-button{
+    margin-left: 0;
+}
+.ifbp-mt-del-dialog .el-dialog__footer{
+    padding: 0;
+    height: 44px;
+    text-align: left;
+    font-size: 0;
+}
+.ifbp-mt-del-dialog .el-dialog__footer .el-button{
+    width: 50%;
+    height: 44px;
+    border: 0;
+    border-top: 1px solid #D2d2d7;
+    border-right: 1px solid #D2D2D7;
+    border-radius: 0;
+    font-family: SFProText-Regular;
+    font-size: 17px;
+    letter-spacing: -0.41px;
+}
+.ifbp-mt-del-dialog .el-button:focus,.ifbp-mt-del-dialog .el-button:hover{
+    border-color: #d2d2d7;
+}
+.ifbp-mt-del-dialog .el-dialog__body{
+    padding: 0 16px 16px 16px;
+}
+.ifbp-mt-del-dialog .confirm-del{
+    color:#E60012;
+}
+.ifbp-mt-del-dialog .cancel-del{
+    color:#000000;
+}
+
+

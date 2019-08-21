@@ -1,0 +1,105 @@
+[{
+    "name": "单行文本",
+    "key": "el-input",
+    "icon": "UIT-iconfont UIT-input",
+    "type": "formelement"
+}, {
+    "name": "多行文本",
+    "key": "el-textarea",
+    "icon": "UIT-iconfont UIT-mtext",
+    "type": "formelement"
+}, {
+    "name": "数值",
+    "key": "el-number",
+    "icon": "UIT-iconfont UIT-num",
+    "type": "formelement"
+}, {
+    "name": "单选框组",
+    "key": "el-radio-group",
+    "icon": "fa fa-dot-circle-o",
+    "type": "formelement"
+}, {
+    "name": "复选框",
+    "key": "el-checkbox",
+    "icon": "fa fa-check-square-o",
+    "type": "formelement"
+}, {
+    "name": "复选框组",
+    "key": "el-checkbox-group",
+    "icon": "fa fa-check-square-o",
+    "type": "formelement"
+}, {
+    "name": "开关",
+    "key": "el-switch",
+    "icon": "fa fa-check-square-o",
+    "type": "formelement"
+}, {
+    "name": "下拉框",
+    "key": "el-select",
+    "type": "formelement",
+    "icon": "fa fa-caret-down"
+}, {
+    "name": "日期",
+    "key": "el-date-picker",
+    "type": "formelement",
+    "icon": "fa fa-jpy"
+}, {
+    "name": "时间",
+    "key": "el-time-picker",
+    "type": "formelement",
+    "icon": "fa fa-jpy"
+}, {
+    "name": "金额",
+    "key": "el-money",
+    "type": "formelement",
+    "icon": "fa fa-jpy"
+}, {
+    "name": "百分比",
+    "key": "el-percent",
+    "type": "formelement",
+    "icon": "fa fa-jpy"
+}, {
+    "name": "参照",
+    "key": "el-ref",
+    "type": "formelement",
+    "icon": "UIT-iconfont UIT-canzhao"
+}, {
+    "name": "图片",
+    "key": "ifbp-image",
+    "type": "formelement",
+    "icon": "UIT-iconfont UIT-picture"
+},{
+  "name": "附件上传",
+  "key": "ifbp-file-upload",
+  "type": "formelement",
+  "icon": "UIT-iconfont UIT-picture"
+}, {
+    "name": "自动补全",
+    "key": "el-autocomplete",
+    "type": "formelement",
+    "icon": "fa fa-jpy"
+}, {
+    "name": "地址",
+    "key": "ifbp-address-ref",
+    "type": "formelement",
+    "icon": "fa fa-jpy"
+},
+{
+    "name": "表格",
+    "key": "el-table",
+    "type": "table",
+    "icon": "UIT-iconfont UIT-phone"
+}, {
+    "name": "表格列",
+    "key": "el-table-column",
+    "type": "tablecolumn",
+    "icon": "UIT-iconfont UIT-phone",
+    "show": false
+}, {
+    "name": "表单分组",
+    "key": "el-form-panel",
+    "type": "formpanel",
+    "icon": "UIT-iconfont UIT-phone",
+    "show": false
+}
+]

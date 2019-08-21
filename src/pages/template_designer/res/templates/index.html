@@ -1,0 +1,44 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="../../vendor/ifbp-element/lib/theme-default/index.css">
+    <style>
+        .el-menu li{
+            width:100%;
+            height:40px;
+            line-height: 40px;
+        }
+        body{
+            margin: 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="app">
+        <el-row>
+            <el-col :span="3">
+                <el-menu @select="selectCategory" :default-active="categoryIndex">
+                    <el-menu-item v-for="(item, index) in categorys" v-bind:index="index + ''" v-text="item.category" style="font-size:16px;"></el-menu-item>
+                </el-menu>
+            </el-col>
+            <el-col :span="3" style="padding-left: 6px;">
+                <el-menu ref="tempMenu" @select="selectTemplate" :default-active="templateIndex">
+                    <el-menu-item v-for="(item, index) in templates" v-bind:index="index + ''" v-text="item.name" ></el-menu-item>
+                </el-menu>
+            </el-col>
+            <el-col :span="18">
+                <img :src="tempImg"  style="height:100%;width:100%;"></img>
+            </el-col>
+        </el-row>
+    </div>
+
+
+    <script src="../../vendor/jquery.js"></script>
+    <script src="../../vendor/vue.js"></script>
+    <script src="../../vendor/ifbp-element/lib/index.js"></script>
+    <script src="../../vendor/requirejs/require.debug.js"></script>
+    <script src="./index.js"></script>
+</body>
+
+</html>

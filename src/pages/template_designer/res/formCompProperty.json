@@ -1,0 +1,1588 @@
+{
+  "el-input": {
+    "name": "单行文本",
+    "directive": "v-comp",
+    "model": {
+      "type": "string"
+    },
+    "property": [{
+      "name": "控件类型",
+      "model": "compType",
+      "type": "select",
+      "filterable":true
+    }, {
+      "name": "控件id",
+      "model": "_id",
+      "type": "string"
+    }, {
+      "name": "绑定属性",
+      "model": "v-model",
+      "type": "string",
+       "filterable":true,
+        "allowCreate":true
+    }, {
+      "name": "引用信息",
+      "model": "ref",
+      "type": "string"
+    }, {
+      "name": "只读",
+      "model": "disabled",
+      "type": "boolean",
+      "default": false
+    }, {
+      "name": "提示信息",
+      "model": "placeholder",
+      "type": "string"
+    }, {
+      "name": "校验格式",
+      "model": "validate-type",
+      "type": "select",
+      "multiple":true,
+      "options": [{
+        "value": "Phone",
+        "label": "电话"
+      }, {
+        "value": "Mobile",
+        "label": "手机"
+      }, {
+        "value": "Email",
+        "label": "邮箱"
+      }, {
+        "value": "NoChinese",
+        "label": "不包含中文"
+      }]
+    }, {
+      "name": "最小长度",
+      "model": "min",
+      "type": "number"
+    }, {
+      "name": "最大长度",
+      "model": "max",
+      "type": "number"
+    }, {
+      "name": "默认值",
+      "model": "defaultValue",
+      "type": "defaultValue"
+    }, {
+      "name": "编辑公式",
+      "model": "editFormula",
+      "type": "formula"
+    }, {
+      "name": "验证公式",
+      "model": "validateFormula",
+      "type": "formula"
+    }, {
+      "name": "显示公式",
+      "model": "showFormula",
+      "type": "formula"
+    }]
+  },
+  "ifbp-address-ref": {
+    "name": "地址",
+    "directive": "v-comp",
+    "model": {
+      "type": "string"
+    },
+    "property": [{
+      "name": "控件类型",
+      "model": "compType",
+      "type": "select",
+      "filterable":true
+    }, {
+      "name": "控件id",
+      "model": "_id",
+      "type": "string"
+    }, {
+      "name": "引用信息",
+      "model": "ref",
+      "type": "string"
+    }, {
+      "name": "只读",
+      "model": "disabled",
+      "type": "boolean",
+      "default": false
+    }, {
+      "name": "提示信息",
+      "model": "placeholder",
+      "type": "string"
+    }, {
+      "name": "数据集",
+      "model": ":template-value",
+      "type": "string"
+    }, {
+      "name": "字段值",
+      "model": "field",
+      "type": "string"
+    }, {
+      "name": "最小长度",
+      "model": "min",
+      "type": "number"
+    }, {
+      "name": "最大长度",
+      "model": "max",
+      "type": "number"
+    }, {
+      "name": "默认值",
+      "model": "defaultValue",
+      "type": "defaultValue"
+    }, {
+      "name": "编辑公式",
+      "model": "editFormula",
+      "type": "formula"
+    }, {
+      "name": "验证公式",
+      "model": "validateFormula",
+      "type": "formula"
+    }, {
+      "name": "显示公式",
+      "model": "showFormula",
+      "type": "formula"
+    }]
+  },
+  "el-textarea": {
+    "name": "多行本框",
+    "directive": "v-comp",
+    "model": {
+      "type": "string"
+    },
+    "property": [{
+      "name": "控件类型",
+      "model": "compType",
+      "type": "select",
+       "filterable":true
+    }, {
+      "name": "控件id",
+      "model": "_id",
+      "type": "string"
+    }, {
+      "name": "绑定属性",
+      "model": "v-model",
+      "type": "string",
+      "filterable":true,
+      "allowCreate":true
+    }, {
+      "name": "引用信息",
+      "model": "ref",
+      "type": "string"
+    }, {
+      "name": "只读",
+      "model": "disabled",
+      "type": "boolean",
+      "default": false
+    }, {
+      "name": "提示信息",
+      "model": "placeholder",
+      "type": "string"
+    }, {
+      "name": "最小长度",
+      "model": "min",
+      "type": "number"
+    }, {
+      "name": "最大长度",
+      "model": "max",
+      "type": "number"
+    },{
+      "name": "显示行数",
+      "model": "rows",
+      "type": "number",
+      "precision": 0,
+      "default": "2"
+    }, {
+      "name": "默认值",
+      "model": "defaultValue",
+      "type": "defaultValue"
+    }]
+  },
+  "el-number": {
+    "name": "数字",
+    "directive": "v-comp",
+    "model": {
+      "type": "string"
+    },
+    "property": [{
+      "name": "控件类型",
+      "model": "compType",
+      "type": "select",
+      "filterable":true
+    }, {
+      "name": "控件id",
+      "model": "_id",
+      "type": "string"
+    }, {
+      "name": "绑定属性",
+      "model": "v-model",
+      "type": "string",
+      "filterable":true,
+       "allowCreate":true
+    }, {
+      "name": "引用信息",
+      "model": "ref",
+      "type": "string"
+    }, {
+      "name": "只读",
+      "model": "disabled",
+      "type": "boolean"
+    }, {
+      "name": "提示信息",
+      "model": "placeholder",
+      "type": "string"
+    }, {
+      "name": "精度",
+      "model": "decimals",
+      "type": "number",
+      "precision": 0
+    }, {
+      "name": "分隔符",
+      "model": "separator",
+      "type": "string",
+      "default": ","
+    },  {
+      "name": "最小长度",
+      "model": "min",
+      "type": "number"
+    }, {
+      "name": "最大长度",
+      "model": "max",
+      "type": "number"
+    }, {
+      "name": "最小值",
+      "model": ":min-value",
+      "type": "number",
+      "precision": 0
+    }, {
+      "name": "最大值",
+      "model": ":max-value",
+      "type": "number",
+      "precision": 0
+    }, {
+      "name": "默认值",
+      "model": "defaultValue",
+      "type": "defaultValue"
+      }, {
+        "name": "编辑公式",
+        "model": "editFormula",
+        "type": "formula"
+      }, {
+        "name": "验证公式",
+        "model": "validateFormula",
+        "type": "formula"
+      }, {
+        "name": "显示公式",
+        "model": "showFormula",
+        "type": "formula"
+      }]
+    },
+  "el-radio-group": {
+    "name": "单选按钮",
+    "directive": "v-comp",
+    "model": {
+      "type": "string"
+    },
+    "property": [{
+      "name": "控件类型",
+      "model": "compType",
+      "type": "select",
+      "filterable":true
+    }, {
+      "name": "控件id",
+      "model": "_id",
+      "type": "string"
+    }, {
+      "name": "绑定属性",
+      "model": "v-model",
+      "type": "string",
+       "filterable":true,
+        "allowCreate":true
+    }, {
+      "name": "引用信息",
+      "model": "ref",
+      "type": "string"
+    }, {
+      "name": "只读",
+      "model": "disabled",
+      "type": "boolean"
+    }, {
+      "name": "内容模板",
+      "model": "template",
+      "type": "string"
+    }, {
+      "name": "选项对象",
+      "model": "radio-options-var",
+      "type": "string"
+    }, {
+      "name": "具体选项",
+      "model": "radio-options",
+      "type": "optionsEditor"
+    }, {
+      "name": "默认值",
+      "model": "defaultValue",
+      "type": "defaultValue"
+      }, {
+        "name": "编辑公式",
+        "model": "editFormula",
+        "type": "formula"
+      }, {
+        "name": "验证公式",
+        "model": "validateFormula",
+        "type": "formula"
+      }, {
+        "name": "显示公式",
+        "model": "showFormula",
+        "type": "formula"
+      }]
+    },
+  "el-checkbox": {
+    "name": "复选框",
+    "directive": "v-comp",
+    "model": {
+      "type": "string"
+    },
+    "property": [{
+      "name": "控件类型",
+      "model": "compType",
+      "type": "select",
+      "filterable":true
+    }, {
+      "name": "控件id",
+      "model": "_id",
+      "type": "string"
+    }, {
+      "name": "绑定属性",
+      "model": "v-model",
+      "type": "string",
+       "filterable":true,
+      "allowCreate":true
+    }, {
+      "name": "引用信息",
+      "model": "ref",
+      "type": "string"
+    }, {
+      "name": "只读",
+      "model": "disabled",
+      "type": "boolean"
+    }, {
+      "name": "最小长度",
+      "model": "min",
+      "type": "number"
+    }, {
+      "name": "最大长度",
+      "model": "max",
+      "type": "number"
+    },  {
+      "name": "默认值",
+      "model": "defaultValue",
+      "type": "defaultValue"
+      }, {
+        "name": "编辑公式",
+        "model": "editFormula",
+        "type": "formula"
+      }, {
+        "name": "验证公式",
+        "model": "validateFormula",
+        "type": "formula"
+      }, {
+        "name": "显示公式",
+        "model": "showFormula",
+        "type": "formula"
+      }]
+    },
+  "el-checkbox-group": {
+    "name": "复选框组",
+    "directive": "v-comp",
+    "model": {
+      "type": "string"
+    },
+    "property": [{
+      "name": "控件类型",
+      "model": "compType",
+      "type": "select",
+      "filterable":true
+    }, {
+      "name": "控件id",
+      "model": "_id",
+      "type": "string"
+    }, {
+      "name": "绑定属性",
+      "model": "v-model",
+      "type": "string",
+       "filterable":true,
+       "allowCreate":true 
+    }, {
+      "name": "引用信息",
+      "model": "ref",
+      "type": "string"
+    }, {
+      "name": "只读",
+      "model": "disabled",
+      "type": "boolean"
+    }, {
+      "name": "选项对象",
+      "model": "checkbox-options-var",
+      "type": "string"
+    }, {
+      "name": "具体选项",
+      "model": "checkbox-options",
+      "type": "optionsEditor"
+    }, {
+      "name": "默认值",
+      "model": "defaultValue",
+      "type": "defaultValue"
+      }, {
+        "name": "编辑公式",
+        "model": "editFormula",
+        "type": "formula"
+      }, {
+        "name": "验证公式",
+        "model": "validateFormula",
+        "type": "formula"
+      }, {
+        "name": "显示公式",
+        "model": "showFormula",
+        "type": "formula"
+      }]
+    },
+  "el-switch": {
+    "name": "开关",
+    "directive": "v-comp",
+    "model": {
+      "type": "string"
+    },
+    "property": [{
+      "name": "控件类型",
+      "model": "compType",
+      "type": "select",
+      "filterable":true
+    }, {
+      "name": "控件id",
+      "model": "_id",
+      "type": "string"
+    }, {
+      "name": "绑定属性",
+      "model": "v-model",
+      "type": "string",
+       "filterable":true,
+       "allowCreate":true 
+    }, {
+      "name": "引用信息",
+      "model": "ref",
+      "type": "string"
+    }, {
+      "name": "只读",
+      "model": "disabled",
+      "type": "boolean"
+    }, {
+      "name": "默认值",
+      "model": "defaultValue",
+      "type": "defaultValue"
+      }, {
+        "name": "编辑公式",
+        "model": "editFormula",
+        "type": "formula"
+      }, {
+        "name": "验证公式",
+        "model": "validateFormula",
+        "type": "formula"
+      }, {
+        "name": "显示公式",
+        "model": "showFormula",
+        "type": "formula"
+      }]
+    },
+  "el-select": {
+    "name": "下拉框",
+    "directive": "v-comp",
+    "model": {
+      "type": "string"
+    },
+    "property": [{
+      "name": "控件类型",
+      "model": "compType",
+      "type": "select",
+      "filterable":true
+    }, {
+      "name": "控件id",
+      "model": "_id",
+      "type": "string"
+    }, {
+      "name": "绑定属性",
+      "model": "v-model",
+      "type": "string",
+       "filterable":true,
+       "allowCreate":true 
+    }, {
+      "name": "选项对象",
+      "model": "select-options-var",
+      "type": "string"
+    }, {
+      "name": "具体选项",
+      "model": "select-options",
+      "type": "optionsEditor"
+    }, {
+      "name": "引用信息",
+      "model": "ref",
+      "type": "string"
+    }, {
+      "name": "多选",
+      "model": ":multiple",
+      "type": "boolean"
+    }, {
+      "name": "只读",
+      "model": "disabled",
+      "type": "boolean"
+    }, {
+      "name": "单选清空",
+      "model": ":clearable",
+      "type": "boolean",
+      "default": true
+    }, {
+      "name": "提示信息",
+      "model": "placeholder",
+      "type": "string"
+    }, {"name": "最小长度",
+      "model": "min",
+      "type": "number"
+    }, {
+      "name": "最大长度",
+      "model": "max",
+      "type": "number"
+    },{
+      "name": "默认值",
+      "model": "defaultValue",
+      "type": "defaultValue"
+      }, {
+        "name": "编辑公式",
+        "model": "editFormula",
+        "type": "formula"
+      }, {
+        "name": "验证公式",
+        "model": "validateFormula",
+        "type": "formula"
+      }, {
+        "name": "显示公式",
+        "model": "showFormula",
+        "type": "formula"
+      }]
+    },
+  "el-money": {
+    "name": "金额",
+    "directive": "v-comp",
+    "model": {
+      "type": "string"
+    },
+    "property": [{
+      "name": "控件类型",
+      "model": "compType",
+      "type": "select",
+      "filterable":true
+    }, {
+      "name": "控件id",
+      "model": "_id",
+      "type": "string"
+    }, {
+      "name": "绑定属性",
+      "model": "v-model",
+      "type": "string",
+       "filterable":true,
+       "allowCreate":true 
+    }, {
+      "name": "引用信息",
+      "model": "ref",
+      "type": "string"
+    }, {
+      "name": "只读",
+      "model": "disabled",
+      "type": "boolean"
+    }, {
+      "name": "提示信息",
+      "model": "placeholder",
+      "type": "string"
+    }, {
+      "name": "币种",
+      "model": "symbol",
+      "type": "string",
+      "default": "￥"
+    }, {
+      "name": "精度",
+      "model": "decimals",
+      "type": "number",
+      "precision": 0
+    }, {
+      "name": "分隔符",
+      "model": "separator",
+      "type": "string",
+      "default": ","
+    }, {
+      "name": "最小值",
+      "model": ":min-value",
+      "type": "number",
+      "precision": 0
+    }, {
+      "name": "最大值",
+      "model": ":max-value",
+      "type": "number",
+      "precision": 0
+    }, {
+      "name": "默认值",
+      "model": "defaultValue",
+      "type": "defaultValue"
+      }, {
+        "name": "编辑公式",
+        "model": "editFormula",
+        "type": "formula"
+      }, {
+        "name": "验证公式",
+        "model": "validateFormula",
+        "type": "formula"
+      }, {
+        "name": "显示公式",
+        "model": "showFormula",
+        "type": "formula"
+      }]
+    },
+  "el-percent": {
+    "name": "百分比",
+    "directive": "v-comp",
+    "model": {
+      "type": "string"
+    },
+    "property": [{
+      "name": "控件类型",
+      "model": "compType",
+      "type": "select",
+      "filterable":true 
+    }, {
+      "name": "控件id",
+      "model": "_id",
+      "type": "string"
+    }, {
+      "name": "绑定属性",
+      "model": "v-model",
+      "type": "string",
+       "filterable":true,
+       "allowCreate":true 
+    }, {
+      "name": "引用信息",
+      "model": "ref",
+      "type": "string"
+    }, {
+      "name": "只读",
+      "model": "disabled",
+      "type": "boolean"
+    }, {
+      "name": "提示信息",
+      "model": "placeholder",
+      "type": "string"
+    }, {
+      "name": "精度",
+      "model": "decimals",
+      "type": "number",
+      "precision": 0
+    }, {
+      "name": "分隔符",
+      "model": "separator",
+      "type": "string",
+      "default": ","
+    }, {
+      "name": "最小值",
+      "model": ":min-value",
+      "type": "number",
+      "precision": 0
+    }, {
+      "name": "最大值",
+      "model": ":max-value",
+      "type": "number",
+      "precision": 0
+    }, {
+      "name": "默认值",
+      "model": "defaultValue",
+      "type": "defaultValue"
+      }, {
+        "name": "编辑公式",
+        "model": "editFormula",
+        "type": "formula"
+      }, {
+        "name": "验证公式",
+        "model": "validateFormula",
+        "type": "formula"
+      }, {
+        "name": "显示公式",
+        "model": "showFormula",
+        "type": "formula"
+      }]
+    },
+  "ifbp-image": {
+    "name": "图片",
+    "directive": "v-comp",
+    "model": {
+      "type": "string"
+    },
+    "property": [{
+      "name": "控件类型",
+      "model": "compType",
+      "type": "select",
+      "filterable":true 
+    }, {
+      "name": "控件id",
+      "model": "_id",
+      "type": "string"
+    }, {
+      "name": "绑定属性",
+      "model": "v-model",
+      "type": "string",
+       "filterable":true,
+       "allowCreate":true 
+    }, {
+      "name": "上传地址",
+      "model": ":action",
+      "type": "string",
+       "default": "action"
+    }, {
+      "name": "图片地址",
+      "model": ":image-url",
+      "type": "string"
+    }, {
+      "name": "成功处理",
+      "model": ":on-success",
+      "type": "string"
+    }, {
+      "name": "失败处理",
+      "model": ":on-error",
+      "type": "string"
+    }, {
+      "name": "引用信息",
+      "model": "ref",
+      "type": "string"
+    }, {
+      "name": "只读",
+      "model": "disabled",
+      "type": "boolean"
+    }]
+  },
+  "ifbp-file-upload": {
+    "name": "附件上传",
+    "directive": "v-comp",
+    "model": {
+      "type": "string"
+    },
+    "property": [{
+      "name": "控件类型",
+      "model": "compType",
+      "type": "select",
+      "filterable":true 
+    }, {
+      "name": "控件id",
+      "model": "_id",
+      "type": "string"
+    }, {
+      "name": "绑定属性",
+      "model": "v-model",
+      "type": "string",
+       "filterable":true,
+       "allowCreate":true 
+    }, {
+      "name": "数据集",
+      "model": ":template-value",
+      "type": "string"
+    }, {
+      "name": "字段值",
+      "model": "field",
+      "type": "string"
+    }, {
+      "name": "主属性",
+      "model": "billpk",
+      "type": "string"
+    },  {
+      "name": "上传地址",
+      "model": ":action",
+      "type": "string",
+       "default": "action"
+    }, {
+      "name": "下载地址",
+      "model": ":download-url",
+      "type": "string"
+    }, {
+      "name": "成功处理",
+      "model": ":on-success",
+      "type": "string"
+    }, {
+      "name": "失败处理",
+      "model": ":on-error",
+      "type": "string"
+    }, {
+      "name": "文件类型",
+      "model": "file-type",
+      "type": "string"
+    }, {
+      "name": "文件大小限制",
+      "model": "limit-size",
+      "type": "number"
+    }]
+  },
+  "el-date-picker": {
+    "name": "日期",
+    "directive": "v-comp",
+    "model": {
+      "type": "string"
+    },
+    "property": [{
+      "name": "控件类型",
+      "model": "compType",
+      "type": "select",
+      "filterable":true
+    }, {
+      "name": "控件id",
+      "model": "_id",
+      "type": "string"
+    }, {
+      "name": "绑定属性",
+      "model": "v-model",
+      "type": "string",
+       "filterable":true,
+       "allowCreate":true 
+    }, {
+      "name": "显示类型",
+      "model": "type",
+      "type": "select",
+      "options": [{
+        "value": "date",
+        "label": "日期"
+      }, {
+        "value": "datetime",
+        "label": "日期时间"
+      }, {
+        "value": "daterange",
+        "label": "日期区间"
+      }, {
+        "value": "datetimerange",
+        "label": "日期时间区间"
+      }, {
+        "value": "year",
+        "label": "年"
+      }, {
+        "value": "month",
+        "label": "月"
+      }, {
+        "value": "week",
+        "label": "周"
+      }]
+    }, 
+    {
+    	"name":"日期格式",
+    	"model":"format",
+    	"type":"string"
+    },
+    {
+      "name": "引用信息",
+      "model": "ref",
+      "type": "string"
+    }, {
+      "name": "只读",
+      "model": "disabled",
+      "type": "boolean"
+    }, {
+      "name": "提示信息",
+      "model": "placeholder",
+      "type": "string"
+    },  {
+      "name": "最小长度",
+      "model": "min",
+      "type": "number"
+    }, {
+      "name": "最大长度",
+      "model": "max",
+      "type": "number"
+    }, {
+      "name": "默认值",
+      "model": "defaultValue",
+      "type": "defaultValue"
+      }, {
+        "name": "编辑公式",
+        "model": "editFormula",
+        "type": "formula"
+      }, {
+        "name": "验证公式",
+        "model": "validateFormula",
+        "type": "formula"
+      }, {
+        "name": "显示公式",
+        "model": "showFormula",
+        "type": "formula"
+      }]
+    },
+  "el-time-picker": {
+    "name": "时间",
+    "directive": "v-comp",
+    "model": {
+      "type": "string"
+    },
+    "property": [{
+      "name": "控件类型",
+      "model": "compType",
+      "type": "select",
+      "filterable":true 
+    }, {
+      "name": "控件id",
+      "model": "_id",
+      "type": "string"
+    }, {
+      "name": "绑定属性",
+      "model": "v-model",
+      "type": "string",
+       "filterable":true,
+       "allowCreate":true 
+    }, {
+      "name": "引用信息",
+      "model": "ref",
+      "type": "string"
+    },  {
+    	"name":"日期格式",
+    	"model":"format",
+    	"type":"string"
+    },{
+      "name": "只读",
+      "model": "disabled",
+      "type": "boolean"
+    }, {
+      "name": "提示信息",
+      "model": "placeholder",
+      "type": "string"
+    },  {
+      "name": "最小长度",
+      "model": "min",
+      "type": "number"
+    }, {
+      "name": "最大长度",
+      "model": "max",
+      "type": "number"
+    }, {
+      "name": "默认值",
+      "model": "defaultValue",
+      "type": "defaultValue"
+      }, {
+        "name": "编辑公式",
+        "model": "editFormula",
+        "type": "formula"
+      }, {
+        "name": "验证公式",
+        "model": "validateFormula",
+        "type": "formula"
+      }, {
+        "name": "显示公式",
+        "model": "showFormula",
+        "type": "formula"
+      }]
+    },
+  "ifbp-multilingual": {
+    "name": "多语",
+    "directive": "v-comp",
+    "model": {
+      "type": "string"
+    },
+    "property": [{
+      "name": "控件类型",
+      "model": "compType",
+      "type": "select",
+      "filterable":true
+    }, {
+      "name": "控件id",
+      "model": "_id",
+      "type": "string"
+    }, {
+      "name": "绑定属性",
+      "model": "v-model",
+      "type": "string",
+       "filterable":true,
+       "allowCreate":true 
+    }, {
+      "name": "引用信息",
+      "model": "ref",
+      "type": "string"
+    }, {
+      "name": "只读",
+      "model": "disabled",
+      "type": "boolean"
+    }, {
+      "name": "提示信息",
+      "model": "placeholder",
+      "type": "string"
+    }, {
+      "name": "数据集",
+      "model": ":template-value",
+      "type": "string"
+    }, {
+      "name": "字段值",
+      "model": "field",
+      "type": "string"
+    }, {
+      "name": "默认值",
+      "model": "defaultValue",
+      "type": "defaultValue"
+      }, {
+        "name": "编辑公式",
+        "model": "editFormula",
+        "type": "formula"
+      }, {
+        "name": "验证公式",
+        "model": "validateFormula",
+        "type": "formula"
+      }, {
+        "name": "显示公式",
+        "model": "showFormula",
+        "type": "formula"
+      }]
+    },
+  "el-ref": {
+    "name": "参照框",
+    "directive": "v-comp",
+    "model": {
+      "type": "string"
+    },
+    "property": [{
+      "name": "控件类型",
+      "model": "compType",
+      "type": "select",
+      "filterable":true 
+    }, {
+      "name": "控件id",
+      "model": "_id",
+      "type": "string"
+    }, {
+      "name": "绑定属性",
+      "model": "v-model",
+      "type": "string",
+       "filterable":true,
+       "allowCreate":true 
+    }, {
+      "name": "引用信息",
+      "model": "ref",
+      "type": "string"
+    }, {
+      "name": "只读",
+      "model": "disabled",
+      "type": "boolean"
+    }, {
+      "name": "弹框标题",
+      "model": "dialog-title",
+      "type": "string"
+    }, {
+      "name": "提示信息",
+      "model": "placeholder",
+      "type": "string"
+    }, {
+      "name": "是否支持多选",
+      "model": ":is-muti-select",
+      "type": "boolean"
+    }, {
+      "name": "非末级节点是否可选择",
+      "model": ":not-leaf-selectable",
+      "type": "boolean",
+      "default": true
+    }, {
+      "name": "参照编码",
+      "model": "ref-code",
+      "type": "select",
+      "filterable":true
+    }, {
+      "name": "显示字段",
+      "model": "show-field",
+      "type": "string"
+    },{
+      "name": "entityId",
+      "model": "entityId",
+      "type": "string",
+      "hidden": true
+    }, {
+      "name": "数据集",
+      "model": ":template-value",
+      "type": "string"
+    }, {
+      "name": "字段值",
+      "model": "field",
+      "type": "string"
+    }, {"name": "最小长度",
+      "model": "min",
+      "type": "number"
+    }, {
+      "name": "最大长度",
+      "model": "max",
+      "type": "number"
+    }, {
+      "name": "查询参数",
+      "model": ":query-params",
+      "type": "string"
+    }, {
+      "name": "自定义弹出框组件",
+      "model": "custom-dialog",
+      "type": "string"
+    }, {
+      "name": "默认值",
+      "model": "defaultValue",
+      "type": "defaultValue"
+    }, {
+      "name": "编辑公式",
+      "model": "editFormula",
+      "type": "formula"
+    }, {
+      "name": "验证公式",
+      "model": "validateFormula",
+      "type": "formula"
+    }, {
+      "name": "显示公式",
+      "model": "showFormula",
+      "type": "formula"
+    }, {
+      "name": "内容显示形式",
+      "model": "panel-show-type",
+      "type": "select",
+      "options": [{
+        "value": "dialog",
+        "label": "弹窗"
+      }, {
+        "value": "select",
+        "label": "下拉"
+      }],
+      "default": "dialog"
+    }, {
+      "name": "启用数据权限",
+      "model": "isUseDataPower",
+      "type": "boolean",
+      "default": true
+    }, {
+      "name": "是否屏蔽自动查询事件",
+      "model": ":fetch-on-enter",
+      "type": "boolean"
+    }, {
+      "name": "数据权限操作编码",
+      "model": "dataPowerOperation_Code",
+      "type": "string"
+    }]
+  },
+  "el-form-item": {
+    "name": "表单项",
+    "directive": "v-comp v-dnd v-select",
+    "property": [{
+      "name": "控件id",
+      "model": "_id",
+      "type": "string"
+    }, {
+      "name": "字段名",
+      "model": "prop",
+      "type": "string",
+      "filterable":true,
+      "allowCreate":true
+    }, {
+      "name": "引用信息",
+      "model": "ref",
+      "type": "string"
+    }, {
+      "name": "名称",
+      "model": "label",
+      "type": "string",
+      "default": "标题",
+       "filterable":true,
+      "allowCreate":true
+    }, {
+      "name": "必输",
+      "model": ":required",
+      "type": "boolean"
+    }, {
+      "name": "隐藏",
+      "model": "hide",
+      "type": "boolean"
+    }, {
+      "name": "宽度",
+      "model": "width",
+      "type": "string"
+    },{
+      "name": "标签颜色",
+      "model": "label-color",
+      "type": "labelColor"
+    },{
+      "name": "提示信息",
+      "model": "tips-content",
+      "type": "string"
+    },{
+      "name": "label位置",
+      "model": "item-label-position",
+      "type": "select",
+      "options": [{
+        "value": "left",
+        "label": "左侧"
+      }, {
+        "value": "top",
+        "label": "上方"
+      }],
+      "default": "left"
+    }]
+  },
+  "el-form-panel": {
+    "name": "表单分组",
+    "directive": "v-comp v-drop={muilt:true} v-select",
+    "property": [{
+      "name": "控件id",
+      "model": "_id",
+      "type": "string"
+    }, {
+      "name": "标题",
+      "model": "title",
+      "type": "string"
+    }]
+  },
+  "el-form": {
+    "name": "表单",
+    "directive": "v-comp v-drop={muilt:true} v-select",
+    "property": [{
+      "name": "控件id",
+      "model": "_id",
+      "type": "string"
+    }, {
+      "name": "表单数据对象",
+      "model": ":model",
+      "type": "string"
+    }, {
+      "name": "引用信息",
+      "model": "ref",
+      "type": "string"
+    }, {
+      "name": "控件名称",
+      "model": "title",
+      "type": "string"
+    }, {
+      "name": "校验规则",
+      "model": ":rules",
+      "type": "string"
+    }, {
+      "name": "label-width（不要设置）",
+      "model": "label-width",
+      "type": "string"
+    }]
+  },
+  "el-table": {
+    "name": "表格",
+    "directive": "v-comp v-drop={muilt:true} v-select",
+    "property": [{
+      "name": "控件id",
+      "model": "_id",
+      "type": "string"
+    }, {
+      "name": "表格数据对象",
+      "model": ":data",
+      "type": "string"
+    }, {
+      "name": "引用信息",
+      "model": "ref",
+      "type": "string"
+    }, {
+      "name": "控件名称",
+      "model": "title",
+      "type": "string"
+    }, {
+      "name": "是否显示数字列",
+      "model": "show-index",
+      "type": "boolean"
+    }, {
+      "name": "是否显示复选列",
+      "model": "show-multi",
+      "type": "boolean"
+    }, {
+      "name": "是否显示合计",
+      "model": ":show-summary",
+      "type": "boolean"
+    }, {
+      "name": "是否显示表头",
+      "model": ":show-header",
+      "type": "boolean",
+      "default": true
+    }, {
+      "name": "合计文本",
+      "model": "sum-text",
+      "type": "string"
+    }, {
+      "name": "合计方法",
+      "model": ":summary-method",
+      "type": "string"
+    }, {
+      "name": "是否显示顶部合计",
+      "model": ":show-top-summary",
+      "type": "boolean"
+    }, {
+      "name": "顶部合计文本",
+      "model": "top-sum-text",
+      "type": "string"
+    }, {
+      "name": "顶部合计方法",
+      "model": ":top-summary-method",
+      "type": "string"
+    }, {
+      "name": "是否为树表",
+      "model": ":table-tree",
+      "type": "boolean"
+    }, {
+      "name": "是否全展开",
+      "model": ":expand-tree-all",
+      "type": "boolean"
+    }, {
+      "name": "树表展开层级",
+      "model": ":tree-level",
+      "type": "number"
+    }, {
+      "name": "树表id字段",
+      "model": "tree-properties-id",
+      "type": "string"
+    }, {
+      "name": "树表pid字段",
+      "model": "tree-properties-pid",
+      "type": "string"
+    }]
+  },
+  "el-table-column": {
+    "name": "表格列",
+    "directive": "v-comp v-dnd v-select",
+    "model": {
+      "type": "string"
+    },
+    "property": [{
+      "name": "控件id",
+      "model": "_id",
+      "type": "string"
+    }, {
+      "name": "字段名",
+      "model": "prop",
+      "type": "string",
+      "filterable":true,
+       "allowCreate":true
+    }, {
+      "name": "引用信息",
+      "model": "ref",
+      "type": "string"
+    }, {
+      "name": "默认隐藏",
+      "model": "default-hide",
+      "type": "boolean"
+    },{
+      "name": "是否排序",
+      "model": ":sortable",
+      "type": "boolean",
+      "default": true
+    }, {
+      "name": "标题",
+      "model": "label",
+      "type": "string"
+    }, {
+      "name": "宽度",
+      "model": "width",
+      "type": "string"
+    }, {
+      "name": "最小宽度",
+      "model": "min-width",
+      "type": "string"
+    }, {
+      "name": "渲染方式",
+      "model": "render-type",
+      "type": "select",
+      "options": [{
+        "value": "default",
+        "label": "默认"
+      }, {
+        "value": "ref",
+        "label": "参照"
+      }, {
+        "value": "file",
+        "label": "附件下载"
+      }, {
+        "value": "select",
+        "label": "下拉框"
+      }, {
+        "value": "boolean",
+        "label": "布尔"
+      }, {
+        "value": "date",
+        "label": "日期"
+      }, {
+        "value": "number",
+        "label": "数字"
+      }, {
+        "value": "money",
+        "label": "金额"
+      }, {
+        "value": "percent",
+        "label": "百分比"
+      }, {
+        "value": "address",
+        "label": "地址"
+      },{
+        "value": "image",
+        "label": "图片"
+      }],
+      "default": "default"
+    },{
+      "name": "个性化模板",
+      "model": "render-template",
+      "type": "select",
+      "options": [{
+        "value": "default",
+        "label": "默认"
+      }, {
+        "value": "user-name",
+        "label": "人员姓名"
+      }, {
+        "value": "user-name-a",
+        "label": "人员姓名超链接"
+      }],
+      "default": "default"
+    },{
+      "name": "显示名称",
+      "model": "show-field",
+      "type": "string"
+    },{
+      "name": "下载地址",
+      "model": "download-url",
+      "type": "string"
+    },{
+      "name": "参照编码",
+      "model": "ref-code",
+      "type": "select",
+      "show":"showfalse"
+    }, {
+      "name": "日期格式",
+      "model": "format",
+      "type": "string"
+    }, {
+      "name": "精度",
+      "model": "decimals",
+      "type": "number",
+      "precision": 0
+    }, {
+      "name": "分隔符",
+      "model": "separator",
+      "type": "string",
+      "default": ","
+    }, {
+      "name": "币种",
+      "model": "symbol",
+      "type": "string",
+      "default": "￥"
+    }, {
+      "name": "渲染选项对象",
+      "model": ":render-select-options-var",
+      "type": "string"
+    }, {
+      "name": "具体选项",
+      "model": ":render-select-options",
+      "type": "optionsEditor"
+    }, {"name": "最小长度",
+      "model": "min",
+      "type": "number"
+    }, {
+      "name": "最大长度",
+      "model": "max",
+      "type": "number"
+    },{
+      "name": "固定方式",
+      "model": "fixed",
+      "type": "select",
+      "options": [{
+        "value": false,
+        "label": "不固定"
+      }, {
+        "value": "left",
+        "label": "左侧"
+      }, {
+        "value": "right",
+        "label": "右侧"
+      }]
+    }, {
+      "name": "对齐方式",
+      "model": "align",
+      "type": "select",
+      "default": "left",
+      "options": [{
+        "value": "left",
+        "label": "居左"
+      }, {
+        "value": "center",
+        "label": "居中"
+      }, {
+        "value": "right",
+        "label": "居右"
+      }]
+    }, {
+      "name": "表头对齐方式",
+      "model": "header-align",
+      "type": "select",
+      "options": [{
+        "value": "left",
+        "label": "居左"
+      }, {
+        "value": "center",
+        "label": "居中"
+      }, {
+        "value": "right",
+        "label": "居右"
+      }],
+      "default": "left"
+    }, {
+      "name": "显示公式",
+      "model": "showFormula",
+      "type": "formula"
+    }]
+  },  
+  "el-autocomplete":{
+    "name": "自动补全",
+    "directive": "v-comp",
+    "model": {
+      "type": "string"
+    },
+	 "property": [{
+      "name": "控件类型",
+      "model": "compType",
+      "type": "select",
+      "filterable":true
+    }, {
+      "name": "控件id",
+      "model": "_id",
+      "type": "string"
+    }, {
+      "name": "绑定属性",
+      "model": "v-model",
+      "type": "string",
+      "filterable":true,
+       "allowCreate":true
+    }, {
+      "name": "引用信息",
+      "model": "ref",
+      "type": "string"
+    },  {
+      "name": "默认值",
+      "model": "defaultValue",
+      "type": "defaultValue"
+    },{
+      "name": "提示信息",
+      "model": "placeholder",
+      "type": "string"
+    }, {"name": "最小长度",
+      "model": "min",
+      "type": "number"
+    }, {
+      "name": "最大长度",
+      "model": "max",
+      "type": "number"
+    },{
+      "name": "输入建议函数",
+      "model": ":fetch-suggestions",
+      "type": "string"
+      }, {
+        "name": "编辑公式",
+        "model": "editFormula",
+        "type": "formula"
+      }, {
+        "name": "验证公式",
+        "model": "validateFormula",
+        "type": "formula"
+      }, {
+        "name": "显示公式",
+        "model": "showFormula",
+        "type": "formula"
+      }]
+    }
+}

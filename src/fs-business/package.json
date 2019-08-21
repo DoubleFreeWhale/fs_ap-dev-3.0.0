@@ -1,0 +1,64 @@
+{
+  "_from": "git+https://gitlab.com/farseerhcm/platform/fs-business.git#dev-3.0.0",
+  "_id": "fs-business@3.0.1",
+  "_inBundle": false,
+  "_integrity": "",
+  "_location": "/fs-business",
+  "_phantomChildren": {
+    "@interactjs/types": "1.5.2",
+    "batch-processor": "1.0.0"
+  },
+  "_requested": {
+    "type": "git",
+    "raw": "fs-business@git+https://gitlab.com/farseerhcm/platform/fs-business.git#dev-3.0.0",
+    "name": "fs-business",
+    "escapedName": "fs-business",
+    "rawSpec": "git+https://gitlab.com/farseerhcm/platform/fs-business.git#dev-3.0.0",
+    "saveSpec": "git+https://gitlab.com/farseerhcm/platform/fs-business.git#dev-3.0.0",
+    "fetchSpec": "https://gitlab.com/farseerhcm/platform/fs-business.git",
+    "gitCommittish": "dev-3.0.0"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "git+https://gitlab.com/farseerhcm/platform/fs-business.git#0634985221dcdce91d08ae10855b0f3784c17243",
+  "_spec": "fs-business@git+https://gitlab.com/farseerhcm/platform/fs-business.git#dev-3.0.0",
+  "_where": "C:\\workhome\\ap_fe",
+  "bundleDependencies": false,
+  "dependencies": {
+    "element-resize-detector": "^1.1.10",
+    "interactjs": "^1.3.4"
+  },
+  "deprecated": false,
+  "description": "A busi Component Library",
+  "devDependencies": {},
+  "files": [
+    "crossRule",
+    "pageModelMixin",
+    "pageLazyMixin",
+    "orgProcesser",
+    "printPre",
+    "fsCorpCascader",
+    "initiateFlow",
+    "mdchildpage",
+    "mdlayout",
+    "mdpage",
+    "ifbpRole",
+    "gridLayout",
+    "gridLayout-fis",
+    "ifbpDomPrint",
+    "ifbpDocumentPreview",
+    "ifbpBtnLine",
+    "assignsubmit",
+    "mobile",
+    "tableHeightMixin"
+  ],
+  "keywords": [],
+  "main": "index.js",
+  "name": "fs-business",
+  "peerDependencies": {},
+  "repository": {},
+  "scripts": {},
+  "version": "3.0.1"
+}

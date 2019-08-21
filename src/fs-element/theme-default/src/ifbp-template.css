@@ -1,0 +1,103 @@
+
+
+.yon-uitemplate {
+  /* background: white; */
+  margin-top: 16px;
+}
+
+.yon-uitemplate.no-top{
+  margin-top: 0px;
+}
+.yon-uitemplate.uitemplate-no-top {
+  margin-top: 0px;
+}
+
+.el-dialog.transfer_self {
+  width: auto;
+}
+
+.el-table tr .el-table-operate-icon{
+  padding-left:0;
+  margin-right:16px;/*防止tooltip位置偏移*/
+  opacity: 0;
+  cursor: pointer;
+  line-height: 32px;
+  min-width: 20px;
+}
+.el-table tr .el-table-operate-icon, .el-table-more-operate-item{
+  color:#75787B;
+}
+.el-table td.table-operate-column{
+  background: #FFF; /* 一些不支持背景渐变的浏览器 */
+  /* background: -moz-linear-gradient(left, rgba(255, 255, 255, .5), rgba(255, 255, 255, 1)); */
+  background: -webkit-gradient(linear, left top, 20% top, from(rgba(255,255,255, .5)), to(rgba(255,255,255, 1)));
+  /* background: -o-linear-gradient(left, rgba(255, 255, 255, .5), rgba(255, 255, 255, 1)); */
+}
+
+.el-table td.table-operate-column:last-child .table-operate-bg-div{
+  width: calc(100% - 8px);
+  height: 10px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: #fff;
+    z-index: -100;
+}
+
+
+.el-table .hover-row td.table-operate-column{
+  background: #EAF9FF;
+}
+
+.el-table .select-row td.table-operate-column{
+  background: #C1E5FD;
+}
+
+.el-table .current-row td.table-operate-column{
+  background: #C1E5FD;
+}
+
+.el-table .hover-row td.table-operate-column:last-child .table-operate-bg-div{
+  background: inherit;
+}
+
+.el-table .select-row td.table-operate-column:last-child .table-operate-bg-div{
+  background: inherit;
+}
+
+.el-table .current-row td.table-operate-column:last-child .table-operate-bg-div{
+  background: inherit;
+}
+
+.el-table .table-operate-column .cell {
+  padding-left: 8px;
+  padding-right: 0;
+  width: 144px;
+  float: right;
+  text-align: right;
+}
+.avatar-uploader {
+  width: 150px;
+  background: #f5f5fa;
+  text-align: center;
+  border: 1px dashed #D2D2D7;
+}
+.avatar-uploader .avatar {
+  width: 150px ;
+}
+.el-form .avatar{
+  width: 150px ;
+  border-radius: 0px ;
+  vertical-align: middle;
+}
+.el-form .ifbp-image-avatar {
+  width: 53px;
+}
+.el-table__body tr.hover-row>td .el-table-operate-icon{opacity: 1}
+.hover-row .hover-row-4{display:inline-block!important;}
+.el-table__body tr.hover-row>td .el-table-operate-icon.el-tooltip{display:inline-block}
+
+
+.paddingBottom16{
+  padding-bottom: 16px;
+}

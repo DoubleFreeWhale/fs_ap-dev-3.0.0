@@ -1,0 +1,29 @@
+.mt-el-radio{
+    height: 30px;
+    line-height: 30px;
+    border: 1px solid #CDCDCD;
+    border-radius: 15px;
+    padding: 0 16px;
+    background: #fff;
+    color: #999999;
+    font-size: 13px;
+    display: inline-block;
+    margin-top: 2px;
+}
+.radio-is-checked{
+  background: #3396FB;
+  color: #fff;
+  border:0;
+}
+.radio-is-disabled{
+  background: #3396FB;
+  border:0;
+  opacity: 0.4;
+  color: #fff;
+}
+.mt-el-radio__label{
+  font-size: 13px;
+}
+/* .mt-el-radio+.mt-el-radio {
+    margin-left: 8px;
+} */

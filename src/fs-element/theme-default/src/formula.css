@@ -1,0 +1,9 @@
+.formula-source-list .el-tabs__item.is-disabled {
+    color: #485d6a;
+    cursor: default;
+    padding-left: 0px;
+    padding-right: 32px;
+}
+.formula-dialog .el-dialog--small {
+    min-width: 720px;
+}

@@ -1,0 +1,659 @@
+@charset "UTF-8";
+@import "checkbox.css";
+@import "tag.css";
+@import "common/var.css";
+
+@component-namespace el {
+
+  @b table {
+    position: relative;
+    overflow: hidden;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 100%;
+    background-color: var(--color-white);
+    font-size: 14px;
+    color: var(--table-text-color);
+    .el-tree-node__expand-icon {
+      transition: none;
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 1px;
+      background-color: var(--table-border-color);
+      z-index: 4;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 1px;
+      height: 100%;
+      background-color: var(--table-border-color);
+      z-index: 1;
+    }
+
+    .el-tooltip.cell {
+      white-space: nowrap;
+      min-width: 50px;
+    }
+
+    @e empty-block {
+      position: relative;
+      min-height: 60px;
+      text-align: center;
+      width: 100%;
+      /* height: 100%; 在未给定table高度的情况下会撑的很高，暂时去掉，后续有问题再考虑 */
+    }
+
+    @e empty-text {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      color: color(var(--color-primary) s(16%) l(44%));
+    }
+
+    @e expand-column {
+      .cell {
+        padding: 0;
+        text-align: center;
+      }
+    }
+
+    @e expand-icon {
+      position: relative;
+      cursor: pointer;
+      color: #666;
+      font-size: 12px;
+      transition: transform 0.2s ease-in-out;
+      height: 100%;
+      @m expanded {
+        transform: rotate(90deg);
+      }
+      > .el-icon {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        margin-left: -5px;
+        margin-top: -9px;
+      }
+    }
+
+    @e expanded-cell {
+      /* padding: 20px 50px; */
+      padding: 16px;
+      /* background-color: var(--color-dark-white); */
+      background-color: #F5F5FA;
+      /* box-shadow: inset 0 2px 0 #f4f4f4; */
+      z-index: 4;
+
+      &:hover {
+        /* background-color: var(--color-dark-white) !important; */
+        background-color: #F5F5FA;
+      }
+    }
+
+    @modifier fit {
+      border-right: 0;
+      border-bottom: 0;
+
+      & th.gutter, td.gutter {
+        border-right-width: 1px;
+      }
+    }
+
+    & th {
+      /* white-space: nowrap; */
+      /* overflow: hidden; */
+    }
+
+    & th, td {
+      height: 40px;
+      min-width: 0;
+      box-sizing: border-box;
+      /* text-overflow: ellipsis; */
+      vertical-align: middle;
+      position: relative;
+
+      @when center {
+        text-align: center;
+      }
+
+      @when left {
+        text-align: left;
+      }
+
+      @when right {
+        text-align: right;
+      }
+    }
+    & th {
+      height: 40px;
+    }
+    & th.is-leaf, td {
+      border-bottom: 1px solid #e6e8eb;
+    }
+
+    @modifier border {
+      & th, td {
+
+
+      }
+
+      & th {
+        border-bottom: 1px solid var(--table-border-color);
+      }
+    }
+
+    & th {
+      background-color: var(--table-header-background);
+      text-align: left;
+    }
+
+    & th > div {
+      display: inline-block;
+      padding-left: 18px;
+      padding-right: 18px;
+      line-height: 44px;
+      box-sizing: border-box;
+    }
+
+    & td > div {
+      box-sizing: border-box;
+    }
+
+    @e fixed, fixed-right {
+      position: absolute;
+      top: 0;
+      left: 0;
+      overflow: hidden;
+
+      &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        /* height: 1px; 解决固定列的滚动条与左侧不一致的情况 */
+        background-color: var(--table-border-color);
+        z-index: 4;
+      }
+    }
+
+    @e fixed-right-patch {
+      position: absolute;
+      top: -1px;
+      right: 0;
+      background-color: var(--table-header-background);
+      border-bottom: 1px solid var(--table-border-color);
+    }
+
+    @e fixed-right {
+      top: 0;
+      left: auto;
+      right: 0;
+
+      /*box-shadow: -1px 0 8px #d3d4d6;*/
+
+      .el-table__fixed-header-wrapper,
+      .el-table__fixed-body-wrapper,
+      .el-table__fixed-footer-wrapper {
+        left: auto;
+        right: 0;
+      }
+    }
+
+    @e fixed-header-wrapper {
+      position: absolute;
+      left: 0;
+      top: 0;
+      z-index: 3;
+      & thead div {
+        background-color: var(--table-header-background);
+        color: var(--table-text-color);
+      }
+    }
+
+    @e fixed-footer-wrapper {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      z-index: 3;
+
+      & tbody td {
+        border-top: 1px solid var(--table-border-color);
+        background-color: var(--table-footer-background);
+        color: var(--table-text-color);
+      }
+    }
+
+    @e fixed-body-wrapper {
+      position: absolute;
+      left: 0;
+      top: 37px;
+      overflow: hidden;
+      z-index: 3;
+    }
+
+    @e header-wrapper, body-wrapper, footer-wrapper {
+      width: 100%;
+    }
+
+    @e footer-wrapper {
+      margin-top: -1px;
+      td {
+        border-top: 1px solid var(--table-border-color);
+      }
+    }
+
+    @e header, body, footer {
+      table-layout: fixed;
+      min-width: 100%;
+    }
+
+    @e header-wrapper, footer-wrapper {
+      overflow: hidden;
+
+      & thead div {
+        background-color: var(--table-header-background);
+        color: var(--table-text-color);
+      }
+
+      & tbody td {
+        background-color: var(--table-footer-background);
+        color: var(--table-text-color);
+      }
+    }
+
+    @e body-wrapper {
+      overflow: hidden;
+      position: relative;
+    }
+
+    & th.required > div::before {
+      display: inline-block;
+      content: "";
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #ff4d51;
+      margin-right: 5px;
+      vertical-align: middle;
+    }
+
+    & th > .cell {
+      position: relative;
+      word-wrap: normal;
+      display: inline-block;
+      line-height: 30px;
+      vertical-align: middle;
+      width: 100%;
+      box-sizing: border-box;
+       overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      font-weight: 400;
+      font-size: 15px;
+
+      &.highlight {
+        color: var(--color-primary);
+      }
+    }
+
+    & .caret-wrapper {
+      position: relative;
+      cursor: pointer;
+      display: inline-block;
+      vertical-align: middle;
+      margin-left: 5px;
+      margin-top: -2px;
+      width: 16px;
+      height: 30px;
+      overflow: initial;
+    }
+
+    & .sort-caret {
+      display: inline-block;
+      width: 0;
+      height: 0;
+      border: 0;
+      content: "";
+      position: absolute;
+      left: 3px;
+      z-index: 2;
+
+      &.ascending {
+        top: 9px;
+        border-top: none;
+        border-right: 5px solid transparent;
+        border-bottom: 5px solid var(--color-light-silver);
+        border-left: 5px solid transparent;
+      }
+
+      &.descending {
+        bottom: 9px;
+        border-top: 5px solid var(--color-light-silver);
+        border-right: 5px solid transparent;
+        border-bottom: none;
+        border-left: 5px solid transparent;
+      }
+&.left {
+   position: unset;
+   bottom: 9px;
+   margin-right: 16px;
+   margin-top: 10px;
+   cursor: pointer;
+   border-left: 6px solid #999999;
+   border-bottom: 6px solid transparent;
+   border-top: 6px solid transparent;
+ }
+    }
+
+    & .ascending .sort-caret.ascending {
+      border-bottom-color: var(--color-extra-light-black);
+    }
+
+    & .descending .sort-caret.descending {
+      border-top-color: var(--color-extra-light-black);
+    }
+
+    & .left .sort-caret.left {
+      border-left-color: var(--color-extra-light-black);
+    }
+
+    & th.gutter, td.gutter {
+      width: 15px;
+      border-right-width: 0;
+      border-bottom-width: 0;
+      padding: 0;
+    }
+
+    & td.gutter {
+      width: 0;
+    }
+
+    & td.is-hidden, th.is-hidden {
+      > * {
+        visibility: hidden;
+        /* height: inherit;*/
+      }
+    }
+
+    & .cell {
+      box-sizing: border-box;
+      overflow: hidden;
+      text-overflow: ellipsis;
+       /*white-space: normal; */
+       white-space: nowrap;
+      /*word-break: break-all; */
+  height: 32px;
+      line-height: 32px;
+      padding-left: 18px;
+      padding-right: 18px;
+    }
+
+    & tr input[type="checkbox"] {
+      margin: 0;
+    }
+
+    & tr {
+      /* background-color: var(--color-white); */
+    }
+
+    @modifier striped {
+      & .el-table__body {
+        & tr.el-table__row--striped {
+          td {
+            background: #FAFAFA;
+            background-clip: padding-box;
+          }
+
+          &.current-row td {
+            background: #EAF9FF;
+          }
+          &.select-row td {
+            background: #C1E5FD;
+          }
+        }
+      }
+    }
+
+    @e body {
+      tr > td a {
+        color:#2A9BE3;
+        text-decoration: none;
+      }
+      tr:hover .el-table-operate-icon {
+        display: inline-block;
+      }
+
+      tr.current-row > td {
+        background:#C1E5FD;
+      }
+      tr.hover-row > td {
+        .el-table-operate-icon {
+          display: inline-block;
+        }
+        background-color: var(--table-hover-color);
+      }
+      tr.hover-row > td a {
+        color:#5CB0E6;
+        text-decoration: underline;
+        cursor: pointer;
+      }
+      tr.select-row td {
+        background: #C1E5FD;
+      }
+    }
+
+    @e diff {
+      @modifier new {
+        /* background: var(--table-diff-color-new) !important; */
+        /* 第一列左上角加角标 */
+        td:first-child {
+          position: relative;
+          &::before {
+            display: block;
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 16px;
+            height: 16px;
+            background: #EAF9FF;
+            border-radius: 0 0 14px;
+          }
+          &::after {
+            display: block;
+            position: absolute;
+            content: "新";
+            left: 0;
+            top: 0;
+            font-size: 12px;
+            transform: scale(0.8);
+            transform-origin: left top;
+            color: #2D2D2D;
+          }
+        }
+      }
+      @modifier del {
+        &:hover > td {
+          background-color: #fff !important;
+        }
+        /* background: var(--table-diff-color-del) !important; */
+        color: #999;
+        cursor: not-allowed;
+      }
+      @modifier edit {
+        .diff-edit {
+          /* position: relative; */
+          /* box-sizing: border-box;
+          padding: 0;
+          height: 100%; */
+          /* background: var(--table-diff-color-edit) !important; */
+          .el-tooltip {
+            /* box-sizing: border-box;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            height: 100%; */
+            font-size: 0.8em;
+            color: #999;
+          }
+        }
+
+        /* .is-left .diff-edit .el-tooltip {
+          justify-content: flex-start;
+        }
+        .is-center .diff-edit .el-tooltip {
+          justify-content: center;
+        }
+        .is-right .diff-edit .el-tooltip {
+          justify-content: flex-end;
+        } */
+      }
+    }
+
+    @e column-resize-proxy {
+      position: absolute;
+      left: 200px;
+      top: 0;
+      bottom: 0;
+      width: 0;
+      border-left: 1px solid var(--table-border-color);
+      z-index: 10;
+    }
+
+    & .hidden-columns {
+      visibility: hidden;
+      position: absolute;
+      z-index: -1;
+    }
+
+    @e column-filter-trigger {
+      display: inline-block;
+      line-height: 34px;
+      margin-left: 5px;
+      cursor: pointer;
+
+      & i {
+        color: var(--color-light-silver);
+      }
+    }
+
+    @modifier enable-row-transition {
+      .el-table__body td {
+        /* 去掉动画, 解决固定列存在时, hover行错位bug */
+        /* transition: background-color .25s ease; */
+      }
+    }
+
+    @modifier enable-row-hover {
+      .el-table__body tr:hover > td {
+        background-color: var(--table-hover-color);
+        background-clip: padding-box;
+      }
+      .el-table__body tr:hover > td a {
+        color: #3896fc;
+        text-decoration: underline;
+        cursor: pointer;
+      }
+    }
+
+    @modifier fluid-height {
+      .el-table__fixed,
+      .el-table__fixed-right {
+        bottom: 0;
+        overflow: hidden;
+      }
+    }
+  }
+}
+
+
+.el-table__fixed .tableExpandSet,.el-table__fixed-right .tableExpandSet{
+  visibility: hidden;
+}
+
+.el-table-menu{
+  position: absolute;
+  right: 16px;
+  top: 12px;
+  color: #97a8be;
+  z-index: 11;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.el-table-column--selection .cell{
+  text-overflow: clip!important;
+}
+
+.el-table__fixed-body-wrapper td{
+  background: #fff;
+}
+
+.el-tooltip__popper ul li.el-table-more-operate-item {
+  text-align: left;
+}
+
+.el-table__header-wrapper .el-table__header tr{
+  background: #EEEFF1;
+}
+.el-table [class*=el-table__row--level] .el-table__expand-icon {
+  display: inline-block;
+  width: 20px;
+  line-height: 20px;
+  height: 20px;
+  text-align: center;
+  margin-right: 3px;
+  vertical-align: middle;
+}
+.el-table .cell .table-image-cell{
+   line-height: 32px;
+   padding-left: 16px;
+   padding-right: 16px;
+ }
+.el-table .cell>div{
+  max-width:calc(100% - 1px)
+}
+.el-table td.table-operate-column.cellWidth .cell{width:auto;}
+
+
+.el-table-no-empty .el-table__empty-block{
+  min-height:0px;
+}
+/* 合计行字体加粗 */
+.el-table__footer-wrapper{
+  font-weight:bold;
+}
+.el-table__fixed .el-table__fixed-footer-wrapper tr:first-child,
+.el-table__fixed-right .el-table__fixed-footer-wrapper tr:last-child{
+  font-weight:bold;
+}
+.el-table--scrollable-x .el-table__body-wrapper {
+  overflow-x: auto;
+}
+.el-table--scrollable-y .el-table__body-wrapper {
+  overflow-y: auto;
+}
+.el-table__expand-icon_datahastree_but_myno{
+  display: inline-block;
+  width: 20px;
+  line-height: 20px;
+  height: 20px;
+  text-align: center;
+  margin-right: 3px;
+  vertical-align: middle;
+}
+.el-table-column--selection .el-table__expand-icon_datahastree_but_myno{
+  display: none;
+}

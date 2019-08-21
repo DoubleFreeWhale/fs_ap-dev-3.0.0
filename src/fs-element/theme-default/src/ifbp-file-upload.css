@@ -1,0 +1,44 @@
+
+.page-upload .el-upload {
+    width: 100%;
+    text-align: left;
+}
+.page-upload-content {
+    width: 100%;
+}
+.page-upload-content > li {
+    height: 32px;
+    border-radius: 4px;
+    background: #efefef;
+    padding-right: 8px;
+    align-items: center;
+    color: #1f2e3d;
+}
+.page-upload-content > li:hover .content-file-name {
+    color: #409eff;
+    cursor: pointer;
+}
+.icon-downLoad {
+    color: #409eff;
+}
+.page-upload-content > li > .ifbp-page-icon {
+    display: inline-block;
+    height: inherit;
+    font-size: 2em;
+    float: left;
+    vertical-align: middle;
+}
+.page-upload-content .content-file-name {
+    text-align: left;
+    float: left;
+    width: calc(100% - 96px);
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.page-progress {
+    float: right;
+    vertical-align: middle;
+}
+.icon-success {
+    color: #13ce66;
+}

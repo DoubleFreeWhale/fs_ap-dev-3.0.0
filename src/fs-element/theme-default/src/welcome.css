@@ -1,0 +1,44 @@
+@charset "UTF-8";
+@import "common/var.css";
+@import "col.css";
+
+.el-welcome{
+    border: 1px solid rgba(230, 234, 238, 1);
+    border-top: 2px solid var(--color-danger);
+    max-width: 1080px;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    & img{
+      float: left;
+      size: 80px;
+      margin: 37.5px 20px;
+    }
+
+    & p{
+      line-height: 1.5em;
+      font-size: 16px;
+      color: #393C3E;
+    }
+    & p.date{
+      font-size: var(--font-size-base);
+      color: #9FA9BA;
+      line-height: 1em;
+    }
+    & p.margin40{
+      margin-top: 40px;
+      font-size: 14px;
+    }
+    & div.el-col-8{
+      border-right: 1px dashed rgba(230, 234, 238, 1);
+      & .number{
+        font-weight: 400;
+        font-style: normal;
+        font-size: 50px;
+        color: #09ACF8;
+      }
+    }
+    & div.el-col-8:last-child{
+      border-right: none
+    }
+}

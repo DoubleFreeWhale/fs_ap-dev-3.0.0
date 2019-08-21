@@ -1,0 +1,58 @@
+{
+	"el-row": {
+		"name": "行",
+		"directive": "v-comp v-drop={muilt:true} v-select",
+		"property": [{
+			"name": "控件id",
+			"model": "_id",
+			"type": "string"
+		}]
+	},
+	"el-col": {
+		"name": "列",
+		"directive": "v-comp v-drop v-select",
+		"property": [{
+			"name": "控件id",
+			"model": "_id",
+			"type": "string"
+		}, {
+			"name": "控件名称",
+			"model": "title",
+			"type": "string"
+		}]
+	},
+  "ifbp-panel-group": {
+    "name": "面板组",
+    "directive": "v-comp v-drag v-drop={muilt:true} v-select",
+    "property": [{
+      "name": "带导航条",
+      "model": ":navbar",
+      "type": "boolean",
+      "default":false
+      },{
+      "name": "base-scroll-top",
+      "model": ":base-scroll-top",
+      "type": "string"
+    }]
+  },
+  "ifbp-panel": {
+    "name": "标题面板",
+    "directive": "v-comp v-drag v-drop={muilt:true,class:\"ifbp-panel-body\"} v-select",
+    "property": [{
+      "name": "id",
+      "model": "id",
+      "type": "string"
+      },{
+      "name": "标题",
+      "model": "title",
+      "type": "string",
+      "default":"标题"
+      },{
+      "name": "图标",
+      "model": ":icons",
+      "type": "string",
+      "default":"baseIcons"
+    }]
+  }
+
+}

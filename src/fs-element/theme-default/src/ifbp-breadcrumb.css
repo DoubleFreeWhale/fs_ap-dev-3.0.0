@@ -1,0 +1,8 @@
+.title-container {
+  height: 20px;
+  min-height: 20px;
+  line-height: 20px;
+  margin-bottom: 8px;
+  position: relative;
+  padding: 0 0 0 16px;
+}

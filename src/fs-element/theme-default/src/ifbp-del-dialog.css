@@ -1,0 +1,9 @@
+.ifbp-del-dialog .del-dialog-icon{
+    color:#FF9500;
+    font-size: 32px;
+    vertical-align: middle;
+}
+.ifbp-del-dialog .del-detail{
+    padding-left: 8px;
+    vertical-align: middle;
+}

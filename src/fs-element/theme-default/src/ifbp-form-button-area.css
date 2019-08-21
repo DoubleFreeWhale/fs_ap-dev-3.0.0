@@ -1,0 +1,16 @@
+.form-button-div{
+  margin-top: 16px;
+  margin-bottom: 4px;
+  overflow: hidden;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+.form-button-div .el-button{
+  float: right;
+  margin-right: 16px;
+}
+
+.form-button-div .el-button:first-child{
+  margin-right: 0px;
+}

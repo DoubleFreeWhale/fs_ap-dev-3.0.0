@@ -1,0 +1,37 @@
+{
+	"el-row": {
+		"name": "行",
+		"directive": "v-comp v-drop={muilt:true} v-select",
+		"property": [{
+			"name": "控件id",
+			"model": "_id",
+			"type": "string"
+		}]
+	},
+	"el-col": {
+		"name": "列",
+		"directive": "v-comp v-drop v-select",
+		"property": [{
+			"name": "控件id",
+			"model": "_id",
+			"type": "string"
+		}, {
+			"name": "控件名称",
+			"model": "title",
+			"type": "string"
+		}]
+	},
+	"el-widget": {
+		"name": "列",
+		"directive": "v-comp v-drop v-select",
+		"property": [{
+			"name": "控件id",
+			"model": "_id",
+			"type": "string"
+		}, {
+			"name": "控件名称",
+			"model": "title",
+			"type": "string"
+		}]
+	}
+}

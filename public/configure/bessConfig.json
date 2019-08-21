@@ -1,0 +1,9 @@
+{
+  "status" : false,
+  "message" : "查询成功!",
+  "data" : {
+    "loginBrowserName": "新一代人力自助平台",
+    "loginBrowserImg": "./static/img/FESCOicon.ico",
+    "loginLogo": "./static/img/bg@2x.png"
+  }
+}

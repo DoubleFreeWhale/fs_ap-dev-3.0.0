@@ -1,0 +1,46 @@
+.navbar_wrapper {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 44px;
+    line-height: 44px;
+    background-color: #ffffff;
+    z-index: 100;
+  }
+  .navbar_title {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background: #ffffff;
+    font-family: PingFangSC-Medium;
+    font-size: 17px;
+    color: #000000;
+    text-align: center;
+  }
+  .navbar_arrow {
+    width: 40px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    text-align: center;
+  }
+  .navbar_left_btns,.navbar_right_btns{
+    position: fixed;
+    top:0;
+    font-family: PingFangSC-Regular;
+    font-size: 17px;
+    color: #eb3341;
+  }
+  .navbar_left_btns  i,.navbar_right_btns i{
+    font-size: 24px;
+  }
+  .navbar_right_btns>i,.navbar_right_btns>span{
+    margin-left:8px;
+  }
+  .navbar_left_btns{
+    left:16px;
+  }
+  .navbar_right_btns{
+    right: 16px;
+  }

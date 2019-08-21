@@ -1,0 +1,55 @@
+/* 统一处理  .ifbp-btn-line 下的按钮对齐 */
+/* 处理表格上方 按钮列的 排序问题 */
+.ifbp-btn-line > .fl,
+.ifbp-btn-line > .fr{
+	margin-top:-16px;
+	line-height:48px;
+	height:48px;
+}
+.ifbp-btn-line > .fr * {
+	vertical-align:middle;
+}
+/* 左侧级联样式处理 */
+.ifbp-btn-line .fl .el-cascader{
+	vertical-align: baseline;
+	top:0;
+}
+.ifbp-btn-line .fl .el-cascader .el-input{
+	top:8px;
+}
+.ifbp-btn-line .fl .el-cascader .el-cascader__label{
+	top:1px;
+}
+/* 右侧 功能按钮对齐 */
+.ifbp-btn-line > .fr .el-button,
+.ifbp-btn-line > .fr .el-dropdown,
+.ifbp-btn-line > .fr .el-dropdown i{
+	top:0;
+}
+.ifbp-btn-line > .fr .el-input__icon{
+	height:26px;
+	line-height:26px;
+	top:4px;
+	right:2px;
+}
+
+.ifbp-btn-line .fr label{
+	display: inline-block;
+}
+
+.ifbp-btn-line .fr i{
+	color:#C8C8CD;
+	font-size: 20px;
+	margin-left: 12px;
+	margin-top:0;
+}
+.ifbp-btn-line .fr i:hover,
+.ifbp-btn-line .fr i.active{
+	cursor: pointer;
+	color:#75787B;
+	background:#fff;
+}
+.ifbp-btn-line .fr i.disabled{
+	cursor: default;
+	color:#C8C8CD;
+}

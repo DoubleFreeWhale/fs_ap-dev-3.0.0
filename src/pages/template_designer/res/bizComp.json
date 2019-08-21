@@ -1,0 +1,20 @@
+[
+	{
+		"name": "上传",
+		"key": "el-upload",
+		"icon": "fa fa-upload",
+		"type": "baseelement"
+	},
+	{
+		"name": "分页",
+		"key": "el-pagination",
+		"icon": "fa fa-ellipsis-h",
+		"type": "baseelement"
+	},
+	{
+		"name": "步骤条",
+		"key": "el-steps",
+		"icon": "fa fa-sort-numeric-asc",
+		"type": "baseelement"
+	}
+]

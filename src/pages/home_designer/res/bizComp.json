@@ -1,0 +1,30 @@
+[{
+		"name": "UI模板",
+		"key": "ifbp-template",
+		"icon": "fa fa-file-o"
+	},
+	{
+		"name": "搜索模板",
+		"key": "ifbp-search",
+		"icon": "fa fa-search",
+		"type": "baseelement"
+	},
+	{
+		"name": "上传",
+		"key": "el-upload",
+		"icon": "fa fa-upload",
+		"type": "baseelement"
+	},
+	{
+		"name": "分页",
+		"key": "el-pagination",
+		"icon": "fa fa-ellipsis-h",
+		"type": "baseelement"
+	},
+	{
+		"name": "步骤条",
+		"key": "el-steps",
+		"icon": "fa fa-sort-numeric-asc",
+		"type": "baseelement"
+	}
+]

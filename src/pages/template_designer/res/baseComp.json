@@ -1,0 +1,37 @@
+[{
+		"name": "标签",
+		"key": "el-tag",
+		"icon": "fa fa-tag",
+		"type": "baseelement"
+	},
+	{
+		"name": "按钮",
+		"key": "el-button",
+		"icon": "fa fa-hand-pointer-o",
+		"type": "baseelement"
+	},
+	{
+		"name": "开关",
+		"key": "el-switch",
+		"icon": "fa fa-toggle-on",
+		"type": "baseelement"
+	},
+	{
+		"name": "图片",
+		"key": "img",
+		"icon": "fa fa-image",
+		"type": "baseelement"
+	},
+	{
+		"name": "滑块",
+		"key": "el-slider",
+		"icon": "fa fa-sliders",
+		"type": "baseelement"
+	},
+	{
+		"name": "进度条",
+		"key": "el-progress",
+		"icon": "fa fa-circle-o-notch",
+		"type": "baseelement"
+	}
+]

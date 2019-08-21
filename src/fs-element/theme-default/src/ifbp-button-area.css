@@ -1,0 +1,19 @@
+.operator-container {
+	/*去掉box-sizing和height属性*/
+  padding: 16px;
+  background-color: #ffffff;
+  font-size: 0px;
+}
+
+.fl{
+  float:left;
+}
+
+.fr{
+  float:right;
+}
+.no-breadcrumb {
+  padding: 0px 0px 16px 0px;
+  background-color: rgba(0,0,0,0);
+  font-size: 0px;
+}

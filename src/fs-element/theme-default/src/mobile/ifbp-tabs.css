@@ -1,0 +1,113 @@
+.ifbp-tab-box {
+  overflow: auto;
+  height: 42;
+  -webkit-overflow-scrolling: touch;
+  border-bottom: 1px solid #BCBBC1;
+  border-top: 1px solid #bcbbc15c;
+  padding-top: 1px;
+}
+.ifbp-tab-nav-nomal .ifbp-tab-nav {
+  display: flex;
+  height: 100%;
+}
+.ifbp-tab-nav-nomal .ifbp-tab-nav .ifbp-tab-nav-item {
+    height: 100%;
+    line-height: 42px;
+    flex: 1;
+    font-family: PingFangSC-Regular;
+    font-size: 14px;
+    color: #75787B;
+    letter-spacing: 0;
+    text-align: center;
+    padding: 0 16px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.ifbp-tab-nav-scoll::-webkit-scrollbar {display:none;-webkit-overflow-scrolling: touch;}
+.ifbp-tab-nav-scoll .ifbp-tab-nav .ifbp-tab-nav-item {
+    height: 42px;
+    line-height: 42px;
+    padding: 0;
+    display: inline-block;
+    font-family: PingFangSC-Regular;
+    font-size: 14px;
+    color: #75787B;
+    letter-spacing: 0;
+    text-align: center;
+    white-space: nowrap;
+    padding: 0 16px;
+    -webkit-overflow-scrolling: touch;
+}
+.ifbp-tab-nav-title{
+    display: block;
+    height: 42px;
+    box-sizing: border-box;
+}
+.ifbp-tab-nav {
+  position: relative;
+  z-index: 0;
+}
+.ifbp-tab-nav-item {
+  text-align: center;
+  height: 100%;
+  display: block;
+  position: relative;
+}
+.ifbp-tab-nav-item-label {
+  color: inherit;
+  display: inline-block;
+  position: relative;
+}
+.ifbp-tab-box .ifbp-tab-nav .ifbp-tab-active {
+  font-family: PingFangSC-Semibold;
+  color: #2D2D2D;
+  border-bottom: 2px solid #000000; 
+}
+/* .yd-tab-nav .yd-tab-active:before {
+  content: '';
+  width: 50%;
+  height: 2px;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  margin-left: -25%;
+  z-index: 4;
+  background-color: #2D2D2D;;
+} */
+.ifbp-tab-panel {
+  position: relative;
+  overflow: hidden;
+  background-color: white;
+}
+.ifbp-tab-panel-item {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  overflow: hidden;
+  transform: translateX(-100%);
+}
+.ifbp-tab-panel-item.ifbp-tab-active {
+  position: relative;
+  transition: transform .15s;
+  transform: translateX(0);
+}
+.ifbp-tab-panel-item.ifbp-tab-active ~ .ifbp-tab-panel-item {
+  transform: translateX(100%);
+}
+.ifbp-tab-badge {
+  position: absolute;
+  top: 2px;
+  z-index: 9;
+  line-height: 0;
+}
+.ifbp-tab-dot {
+  position: absolute;
+  top: -10px;
+}
+.ifbp-tab-dot > i {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-radius: 100px;
+}

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="54px" height="54px" viewBox="0 0 54 54" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48 (47235) - http://www.bohemiancoding.com/sketch -->
+    <title>icon_account_24px</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="009_员工信息_新增" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-224.000000, -353.000000)">
+        <g id="Group-11" transform="translate(176.000000, 280.000000)">
+            <g id="icon_account_24px" transform="translate(43.000000, 68.000000)">
+                <rect id="Rectangle-2-Copy-6" fill="#FF00FF" opacity="0" x="0" y="0" width="64" height="64"></rect>
+                <path d="M32,5.33333333 C17.3333333,5.33333333 5.33333333,17.3333333 5.33333333,32 C5.33333333,46.6666667 17.3333333,58.6666667 32,58.6666667 C46.6666667,58.6666667 58.6666667,46.6666667 58.6666667,32 C58.6666667,17.3333333 46.6666667,5.33333333 32,5.33333333 Z M32,13.3333333 C36.5333333,13.3333333 40,16.8 40,21.3333333 C40,25.8666667 36.5333333,29.3333333 32,29.3333333 C27.4666667,29.3333333 24,25.8666667 24,21.3333333 C24,16.8 27.4666667,13.3333333 32,13.3333333 Z M32,51.2 C25.3333333,51.2 19.4666667,47.7333333 16,42.6666667 C16,37.3333333 26.6666667,34.4 32,34.4 C37.3333333,34.4 48,37.3333333 48,42.6666667 C44.5333333,47.7333333 38.6666667,51.2 32,51.2 Z" id="Shape" fill="#F0F0F5" fill-rule="nonzero"></path>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,121 @@
+<html lang="zh-cn">
+
+<head>
+    <link rel="stylesheet" href="./vendor/ifbp-element/lib/theme-default/index.css">
+    <link rel="stylesheet" href="./styles/fill-in.css">
+    <meta name="google" value="notranslate">
+  <link rel="stylesheet" href="vendor/fontAwesome/css/font-awesome.css">
+<link rel="stylesheet" href="vendor/iconfont/iconfont.css">
+</head>
+
+<body class="bill-body" style="background-color:#EEEEEE">
+    <div id="app">
+    	
+    	<div class="f_mainTool">
+    		 <div class="f_mainToolMedia" id="rulers">
+	            <span id='pc' class="fa fa-desktop active"  onclick="changeToPc()" ></span>
+	            <span id='pctableh' class="fa fa-tablet fa-rotate-270" onclick="changeToTabletH()"  style="font-size:24px;" title="pad-横屏" ></span>
+	            <span id='pctablev'class="fa fa-tablet" title="pad-竖屏" onclick="changeToTabletV()" style="font-size:24px;" ></span>
+	            <span id='mobileh' class="fa fa-mobile fa-rotate-270" onclick="changeToMobileH()"  title="手机-横屏" style="font-size:26px;" ></span>
+	            <span id='mobilev' class="fa fa-mobile" onclick="changeToMobileV()" style="font-size:26px;" title="手机-竖屏" ></span>
+	         
+	          </div>
+    	</div>	
+        <div id='bill-body-container' class="bill-body-container" style="">
+            <div class="container yfd" style="">
+                <!-- 只读态加bill-readonly样式 -->
+                <div class="row" style="">
+                    <div class="col-md-12" style="">
+                        <div class="panel panel-success panel-success-m" style="">
+                            <div class="workflowpanel hide"></div>
+                            <div class="panel-body panel-body-gray panel-body-white">
+                                <div id="form_body"></div>
+                            </div>
+                            <div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./vendor/jquery.js"></script>
+    <script src="./vendor/vue.js"></script>
+    <script src="./vendor/ifbp-element/lib/index-base.js"></script>
+    <script src="./vendor/ifbp-element/lib/index-other.js"></script>
+    <script>
+        Vue.directive('select', {
+            bind: function (el, binding, vnode) {}
+        })
+        Vue.directive('dnd', {
+            bind: function (el, binding, vnode) {}
+        })
+        Vue.directive('drag', {
+            bind: function (el, binding, vnode) {}
+        })
+        Vue.directive('drop', {
+            bind: function (el, binding, vnode) {}
+        })
+
+        Vue.directive('comp', {
+            bind: function (el, binding, vnode) {}
+        })
+
+        var formLayoutDom = window.localStorage.getItem('formLayoutDom');
+        var formData = JSON.parse(window.localStorage.getItem('formData'));
+        var formInfo = JSON.parse(window.localStorage.getItem('formInfo'));
+        formLayoutDom = formLayoutDom.replace(/\hide="true"/g,'hide="true" v-if="false"')
+        window.app = new Vue({
+            el: '#app',
+            data: function () {
+                return {formInfo:formInfo}
+            }
+        });
+        var Comp = Vue.extend({
+            template: formLayoutDom,
+            data: function () {
+                return formData;
+            }
+        })
+        window.app.formComp = new Comp().$mount("#form_body");
+
+
+        // window.app = new Vue({
+        //     template: formLayoutDom,
+        //     data: function() {
+        //         return formData;
+        //     },
+        //     el: '#app'
+        // })
+    </script>
+    <script>
+    	function changeToPc(){
+    		document.getElementById("bill-body-container").style.width = 100+'%';
+    		document.querySelector("#rulers>span.active").classList.remove('active')
+    		document.getElementById("pc").classList.add('active');
+    	}
+    	function changeToTabletH(){
+    		document.getElementById("bill-body-container").style.width = 1024+'px';
+    		document.querySelector("#rulers>span.active").classList.remove('active')
+    		document.getElementById("pctableh").classList.add('active')
+    	}
+    	function changeToTabletV(){
+    		document.getElementById("bill-body-container").style.width = 768+'px';
+    		document.querySelector("#rulers>span.active").classList.remove('active')
+    		document.getElementById("pctablev").classList.add('active');
+    	}
+    	function changeToMobileH(){
+    		document.getElementById("bill-body-container").style.width = 480+'px';
+    		document.querySelector("#rulers>span.active").classList.remove('active')
+    		document.getElementById("mobileh").classList.add('active');
+    	}
+    	function changeToMobileV(){
+    		document.getElementById("bill-body-container").style.width = 320+'px';
+    		document.querySelector("#rulers>span.active").classList.remove('active')
+    		document.getElementById("mobilev").classList.add('active');
+    	}
+		
+    </script>
+</body>
+
+</html>

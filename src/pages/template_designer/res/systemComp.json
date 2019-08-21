@@ -1,0 +1,67 @@
+[   {
+        "name": "用户",
+        "key": "el-input",
+        "icon": "UIT-iconfont UIT-input",
+        "type":"formelement"
+    },{
+        "name": "部门",
+        "key": "ifbp-textarea",
+        "icon": "UIT-iconfont UIT-mtext",
+        "type":"formelement"
+    },{
+        "name": "关联",
+        "key": "ifbp-number",
+        "icon": "UIT-iconfont UIT-num",
+        "type":"formelement"
+    },{
+        "name": "自动编号",
+        "key": "ifbp-radio",
+        "icon": "fa fa-dot-circle-o",
+        "type":"formelement"
+    },{
+        "name": "关联字段",
+        "key": "ifbp-checkbox",
+        "icon": "fa fa-check-square-o",
+        "type":"formelement"
+    },{
+        "name": "制单人",
+        "key": "ifbp-select",
+        "type":"formelement",
+        "icon": "fa fa-caret-down"
+    },{
+        "name": "部门负责人",
+        "key": "ifbp-money",
+        "type":"formelement",
+        "icon": "fa fa-jpy"
+    },{
+        "name": "制单人部门",
+        "key": "ifbp-reference",
+        "type":"formelement",
+        "icon": "UIT-iconfont UIT-canzhao"
+    },{
+        "name": "审批意见",
+        "key": "ifbp-label",
+        "type":"formelement",
+        "icon": "UIT-iconfont UIT-simpletext"
+    },{
+        "name": "制单人职务",
+        "key": "ifbp-image",
+        "type":"formelement",
+        "icon": "UIT-iconfont UIT-picture"
+    },{
+        "name": "上级主管",
+        "key": "ifbp-email",
+        "type":"formelement",
+        "icon": "UIT-iconfont UIT-mail"
+    },{
+        "name": "主管部门",
+        "key": "ifbp-phone",
+        "type":"formelement",
+        "icon": "UIT-iconfont UIT-phone"
+    },{
+        "name": "主管职务",
+        "key": "ifbp-phone",
+        "type":"formelement",
+        "icon": "UIT-iconfont UIT-phone"
+    }
+]
